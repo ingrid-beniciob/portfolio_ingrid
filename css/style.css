@@ -1,0 +1,444 @@
+/* ===== RESET E CONFIGURAÇÕES GERAIS ===== */
+
+/* Remove todas as margens e preenchimentos padrão dos elementos */
+* {
+    margin: 0;          /* Margem zero */
+    padding: 0;         /* Preenchimento zero */
+    box-sizing: border-box; /* Inclui borda e preenchimento no cálculo da largura/altura */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte */
+    line-height: 1.9;   /* Altura da linha para melhor legibilidade */
+    color: #000000;        /* Cor do texto (cinza escuro) */
+    background-color: #ffffff; /* Cor de fundo (branco) */
+}
+
+/* ===== HEADER E NAVEGAÇÃO ===== */
+
+/* Estiliza o cabeçalho */
+header {
+    background: #ffc9e1; /*fundo*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave embaixo */
+    position: fixed;    /* Fixa o header no topo da tela */
+    width: 100%;        /* Largura total da tela */
+    top: 0;             /* Cola no topo */
+    z-index: 1000;      /* Garante que fique acima de outros elementos */
+}
+
+/* Estiliza a tabela de navegação */
+nav table {
+    width: 100%;        /* Largura total */
+    border-collapse: collapse; /* Remove espaços entre bordas das células */
+}
+
+/* Estiliza a linha da tabela */
+nav tr {
+    display: flex;              /* Usa flexbox para layout */
+    justify-content: center;    /* Centraliza os itens */
+    align-items: center;        /* Centraliza verticalmente */
+    padding: 1rem 2rem;     /* Espaçamento interno (16px top/bottom, 32px left/right) */
+    position: relative;         /* Para posicionar o botão contato */
+    gap: 4rem;
+}
+
+/* Estiliza as células da tabela */
+nav td {
+    padding: 0;
+    text-align: center;
+}
+
+nav td:last-child {
+    position: absolute;
+    right: 1rem;
+}
+
+/* Última célula (botão contato) fica à direita */
+nav td:last-child {
+    flex: 0;            /* Não ocupa espaço igual */
+    position: absolute;  /* Posiciona absolutamente */
+    right: 2rem;        /* 32px da direita */
+}
+
+/* Estiliza os links de navegação */
+nav a {
+    text-decoration: none;      /* Remove sublinhado */
+    color: #000000;                /* Cor do texto */
+    font-weight: 500;           /* Peso da fonte (semi-negrito) */
+    transition: color 0.3s ease; /* Transição suave de cor em 0.3 segundos */
+    padding: 0.5rem 1rem;       /* Espaçamento interno dos links */
+}
+
+
+/* Efeito quando passa o mouse sobre os links */
+nav a:hover {
+    color: #b7095d    /* cor*/
+}
+
+/* Estiliza o primeiro link*/
+nav td:first-child a {
+    font-weight: bold; /* Texto em negrito */
+    font-size: 1.2rem;   /* Tamanho maior da fonte */
+    color: #000000     /* Cor */
+}
+
+/* Estiliza o botão de contato */
+#openModalBtn {
+    background: transparent;  /* Fundo transparente */
+    color: rgb(0, 0, 0);        /* cor texto */
+    border:6;   /* deixa com borda*/
+    padding: 0.75rem 1.5rem; /* Espaçamento interno */
+    border-radius:10px;  /* Bordas arredondadas */
+    cursor: pointer;     /* Muda cursor para mãozinha */
+    font-weight: 550;    /* Peso da fonte */
+    transition: background 0.3s ease; /* Transição suave do fundo */
+}
+
+/* Efeito hover no botão */
+#openModalBtn:hover {
+    border: #000000;
+    background: rgb(0, 0, 0);   /* Fundo branco */
+    color: #b7095d
+}
+
+/* ===== SEÇÃO HERO (PRINCIPAL) ===== */
+
+/* Estiliza a seção hero (banner principal) */
+#hero {
+    background: linear-gradient(135deg, #f7cded 0%, #17021c 100%); /* Gradiente rosa-roxo */
+    color: rgb(0, 0, 0);        /*Cor*/
+    padding: 8rem 2rem 4rem; /* Espaçamento interno grande em cima */
+    text-align: left ;  /* Centraliza texto */
+    min-height: 100vh;   /* Altura mínima da tela inteira */
+    display: flex;       /* Usa flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estiliza o título principal */
+#hero h1 {
+    font-size: 3rem;     /* Tamanho grande da fonte */
+    margin-bottom: 1rem; /* Espaço abaixo */
+    font-weight: 700;    /* Negrito */
+}
+
+/* Estiliza os parágrafos */
+#hero p {
+    font-size: 1.5rem;   /* Tamanho médio da fonte */
+    margin-bottom: 0.5rem; /* Pequeno espaço abaixo */
+    opacity: 0.9;        /* Leve transparência */
+}
+
+/* Estiliza o último parágrafo */
+#hero p:last-of-type {
+    font-size: 1.2rem;   /* Tamanho menor */
+    margin-bottom: 2rem; /* Mais espaço abaixo */
+    font-style: italic;  /* Texto em itálico */
+}
+
+/* Estiliza o link/botão da hero */
+#hero a {
+    display: inline-block;    /* Permite definir largura/altura */
+    background: transparent;  /* Fundo transparente */
+    color: white;            /* Texto branco */
+    border: 2px solid white; /* Borda branca */
+    padding: 0.75rem 2rem;   /* Espaçamento interno */
+    border-radius:9px;      /* Bordas arredondadas */
+    text-decoration: none;   /* Remove sublinhado */
+    font-weight: 500;        /* Peso da fonte */
+    transition: all 0.3s ease; /* Transição suave de todas as propriedades */
+}
+
+/* Efeito hover no botão */
+#hero a:hover {
+    border: #000000;
+    background: rgb(0, 0, 0);   /* Fundo branco */
+    color: #b7095d;     /* Texto na cor do gradiente */
+}
+
+/* ===== SEÇÃO ABOUT ===== */
+
+/* Estiliza a seção sobre */
+#about {
+    padding: 4rem 2rem;  /* Espaçamento interno */
+    max-width: 1200px;   /* Largura máxima */
+    margin: 0 auto;      /* Centraliza na página */
+}
+
+/* Estiliza o título da seção */
+#about h2 {
+    font-size: 2.5rem;   /* Tamanho grande */
+    margin-bottom: 2rem; /* Espaço abaixo */
+    text-align: center;  /* Centraliza texto */
+    color: #333;         /* Cor do texto */
+}
+
+/* Estiliza o parágrafo sobre */
+#about p {
+    font-size: 1.1rem;   /* Tamanho da fonte */
+    text-align: center;  /* Texto centralizado */
+    max-width: 800px;    /* Largura máxima do texto */
+    margin: 0 auto;      /* Centraliza */
+    line-height: 1.8;    /* Altura da linha para legibilidade */
+}
+
+/* Linha divisória */
+hr {
+    border: none;        /* Remove borda padrão */
+    height: 1px;         /* Altura da linha */
+    background: #e0e0e0; /* Cor cinza clara */
+    margin: 3rem auto;   /* Espaço acima/abaixo e centraliza */
+    width: 80%;          /* Largura de 80% do container */
+}
+
+/* ===== SEÇÃO DE HABILIDADES ===== */
+
+/* Container grid para os cards de habilidades */
+.skills-grid {
+    display: grid;                                  /* Usa CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 2rem;                                      /* Espaço entre os cards */
+    margin-top: 3rem;                               /* Espaço acima */
+}
+
+/* Estiliza cada card de habilidade */
+.skill-card {
+    background: #f8f9fa;    /* Fundo cinza muito claro */
+    padding: 2rem;          /* Espaçamento interno */
+    border-radius: 10px;    /* Bordas arredondadas */
+    text-align: center;     /* Texto centralizado */
+    transition: transform 0.3s ease; /* Transição suave para transform */
+}
+
+/* Efeito hover nos cards */
+.skill-card:hover {
+    transform: translateY(-5px); /* Move o card 5px para cima */
+}
+
+/* Título dentro do card */
+.skill-card h3 {
+    color: #007bff;     /* Cor azul */
+    margin-bottom: 1rem; /* Espaço abaixo */
+    font-size: 1.3rem;  /* Tamanho da fonte */
+}
+
+/* ===== MODAL ===== */
+
+/* Estiliza o modal (janela flutuante) */
+.modal {
+    display: none;          /* Começa invisível */
+    position: fixed;        /* Posição fixa na tela */
+    top: 50%;               /* Começa no meio vertical */
+    left: 50%;              /* Começa no meio horizontal */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+    background: white;      /* Fundo branco */
+    padding: 2rem;          /* Espaçamento interno */
+    border-radius: 10px;    /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra pronunciada */
+    z-index: 1001;          /* Fica acima do overlay */
+    min-width: 400px;       /* Largura mínima */
+    max-width: 90%;         /* Largura máxima responsiva */
+}
+
+/* Fundo escuro atrás do modal */
+.overlay {
+    display: none;          /* Começa invisível */
+    position: fixed;        /* Posição fixa */
+    top: 0;                 /* Começa no topo */
+    left: 0;                /* Começa na esquerda */
+    width: 100%;            /* Largura total da tela */
+    height: 100%;           /* Altura total da tela */
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+    z-index: 1000;          /* Fica acima do conteúdo mas abaixo do modal */
+}
+
+/* Botão de fechar do modal */
+#closeModalBtn {
+    position: absolute;     /* Posição absoluta dentro do modal */
+    top: 15px;              /* 15px do topo */
+    right: 15px;            /* 15px da direita */
+    background: none;       /* Sem fundo */
+    border: none;           /* Sem borda */
+    font-size: 1.2rem;      /* Tamanho da fonte */
+    cursor: pointer;        /* Cursor de mãozinha */
+    color: #666;            /* Cor cinza */
+}
+
+/* Efeito hover no botão fechar */
+#closeModalBtn:hover {
+    color: #333;            /* Cor mais escura */
+}
+
+/* Título do modal */
+.modal h2 {
+    margin-bottom: 1.5rem;  /* Espaço abaixo */
+    color: #333;            /* Cor do texto */
+}
+
+/* Formulário dentro do modal */
+.modal form {
+    display: flex;          /* Usa flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    gap: 1rem;              /* Espaço entre os elementos */
+}
+
+/* Campos de input e textarea */
+.modal input,
+.modal textarea {
+    padding: 0.75rem;       /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 5px;     /* Bordas levemente arredondadas */
+    font-size: 1rem;        /* Tamanho da fonte */
+}
+
+/* Botão de enviar do formulário */
+.modal button[type="submit"] {
+    background: #007bff;    /* Fundo azul */
+    color: white;           /* Texto branco */
+    border: none;           /* Remove borda */
+    padding: 0.75rem;       /* Espaçamento interno */
+    border-radius: 5px;     /* Bordas arredondadas */
+    cursor: pointer;        /* Cursor de mãozinha */
+    font-weight: 500;       /* Peso da fonte */
+}
+
+/* Efeito hover no botão enviar */
+.modal button[type="submit"]:hover {
+    background: #0056b3;    /* Azul mais escuro */
+}
+
+/* ===== FOOTER ===== */
+
+/* Estiliza o rodapé */
+footer {
+    background: #202122;    /* Fundo cinza muito claro */
+    padding: 3rem 2rem 1rem; /* Espaçamento interno */
+    margin-top: 4rem;       /* Espaço acima */
+}
+
+/* Container principal do rodapé */
+.rodape {
+    display: grid;                          /* Usa CSS Grid */
+    grid-template-columns: 2fr 1fr 1fr;    /* 3 colunas (a primeira é maior) */
+    gap: 2rem;                              /* Espaço entre colunas */
+    max-width: 1200px;                      /* Largura máxima */
+    margin: 0 auto;                         /* Centraliza */
+}
+
+/* Título no rodapé */
+.rodape-info h3 {
+    color:  #ffc9e1;    /* Cor azul */
+    margin-bottom: 1rem; /* Espaço abaixo */
+}
+
+/* Títulos das seções do rodapé */
+.rodape-links h4,
+.rodape-social h4 {
+    margin-bottom: 1rem; /* Espaço abaixo */
+    color:  #ffc9e1         /* Cor do texto */
+}
+
+/* Lista de links */
+.rodape-links ul {
+    list-style: none;    /* Remove marcadores da lista */
+}
+
+/* Itens da lista */
+.rodape-links li {
+    margin-bottom: 0.5rem; /* Espaço entre itens */
+}
+
+/* Links do rodapé */
+.rodape-links a {
+    text-decoration: none;      /* Remove sublinhado */
+    color: #fffcfc;                /* Cor cinza */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Efeito hover nos links */
+.rodape-links a:hover {
+    color: #b7095d;     /* Muda para azul */
+}
+
+/* Ícones sociais */
+.social-icons span {
+    display: inline-block;      /* Permite definir tamanho */
+    width: 40px;               /* Largura fixa */
+    height: 40px;              /* Altura fixa */
+    background: #000000;          /* Fundo preto */
+    color: white;              /* Ícone branco */
+    text-align: center;        /* Centraliza ícone */
+    line-height: 40px;         /* Centraliza verticalmente */
+    border-radius: 50%;        /* Forma circular */
+    margin-right: 0.5rem;      /* Espaço entre ícones */
+    cursor: pointer;           /* Cursor de mãozinha */
+}
+
+/* Parte inferior do rodapé */
+.rodape-bottom {
+    text-align: center;        /* Texto centralizado */
+    margin-top: 3rem;          /* Espaço acima */
+    padding-top: 1rem;         /* Espaço interno acima */
+    border-top: 1px solid  #ffc9e1; /* divisória */
+    color: #0b0b0b;               /* Cor cinza */
+}
+
+.rodape-bottom p {
+    color: #ffc9e1;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.rodape-info p {
+    color: #ffffff;
+    
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+    /* Navegação em coluna em telas pequenas */
+    nav tr {
+        flex-direction: column; /* Muda para coluna */
+        gap: 1rem;              /* Espaço entre itens */
+        padding: 1rem;          /* Menos padding */
+    }
+    
+    /* Título menor em mobile */
+    #hero h1 {
+        font-size: 2rem;    /* Tamanho menor */
+    }
+    
+    /* Texto menor em mobile */
+    #hero p {
+        font-size: 1.2rem;  /* Tamanho menor */
+    }
+    
+    /* Rodapé em uma coluna */
+    .rodape {
+        grid-template-columns: 1fr; /* Uma coluna apenas */
+        text-align: center;         /* Texto centralizado */
+    }
+    
+    /* Modal mais largo em mobile */
+    .modal {
+        min-width: 90%;     /* Ocupa 90% da tela */
+        padding: 1.5rem;    /* Menos padding */
+    }
+}
+
+/* Celulares muito pequenos */
+@media (max-width: 480px) {
+    /* Menos padding na hero */
+    #hero {
+        padding: 6rem 1rem 3rem; /* Padding reduzido */
+    }
+    
+    /* Menos padding na seção about */
+    #about {
+        padding: 2rem 1rem; /* Padding reduzido */
+    }
+}
