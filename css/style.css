@@ -154,8 +154,8 @@ nav td:first-child a {
 /* Efeito hover no botão */
 #hero a:hover {
     border: #000000;
-    background: rgb(0, 0, 0);   /* Fundo branco */
-    color: #b7095d;     /* Texto na cor do gradiente */
+    background: rgb(0, 0, 0);   /* Fundo */
+    color: #b7095d;     /* Cor texto */
 }
 
 /* ===== SEÇÃO ABOUT ===== */
@@ -295,18 +295,19 @@ hr {
 
 /* Botão de enviar do formulário */
 .modal button[type="submit"] {
-    background: #007bff;    /* Fundo azul */
-    color: white;           /* Texto branco */
+    background: #ffc9e1;  /*fundo*/
+    color:  #000000;      /* cor do texto*/
     border: none;           /* Remove borda */
     padding: 0.75rem;       /* Espaçamento interno */
-    border-radius: 5px;     /* Bordas arredondadas */
+    border-radius: 8px;     /* Bordas arredondadas */
     cursor: pointer;        /* Cursor de mãozinha */
     font-weight: 500;       /* Peso da fonte */
 }
 
 /* Efeito hover no botão enviar */
 .modal button[type="submit"]:hover {
-    background: #0056b3;    /* Azul mais escuro */
+    background: rgb(0, 0, 0);   /* Fundo ao passar o mouse */
+    color: #b7095d;     /* Cor */
 }
 
 /* ===== FOOTER ===== */

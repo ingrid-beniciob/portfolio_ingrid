@@ -20,9 +20,7 @@
                     <td><a href="pages/projects.html">Projetos</a></td>
                     <td><a href="pages/events.html">Eventos</a></td>
 
-                    <!-- Botão para abrir o formulário -->
-                    <td><button id="openModalBtn">Contato</button></td>
-
+                   <td><button id="openModalBtn" onclick="openContactForm()">Contato</button></td>
                 </tr>
             </table>
         </nav>
@@ -50,20 +48,21 @@
     </main>
 
 
-     <!-- Modal do Formulário -->
-    <div class="overlay" id="overlay"></div>
+    <!-- Modal do Formulário -->
+<div class="overlay" id="overlay"></div>
 
-    <div class="modal" id="contactModal">
-      <button id="closeModalBtn">X</button>
-      <h2>Entre em Contato</h2>
-      <form>
+<div class="modal" id="contactModal">
+  
+    <button id="closeModalBtn" onclick="closeContactForm()">X</button>
+    <h2>Entre em Contato</h2>
+    <form>
         <input type="text" placeholder="Nome" required>
         <input type="text" placeholder="Sobrenome" required>
         <input type="email" placeholder="Seu email" required>
         <textarea placeholder="Sua mensagem" rows="5"></textarea>
         <button type="submit">Enviar</button>
-      </form>
-    </div>
+    </form>
+</div>
 
     <!-- seção rodapé da página-->
     <footer>
@@ -99,7 +98,7 @@
         </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
