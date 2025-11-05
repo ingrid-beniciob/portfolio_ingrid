@@ -107,7 +107,7 @@ nav td:first-child a {
 /* Estiliza a seção hero (banner principal) */
 #hero {
     padding: 6rem 2rem; /* Espaçamento interno: 6rem em cima/baixo, 2rem nas laterais */
-    background: linear-gradient(135deg, #ffc9e1 0%, #350b47 100%); /* Gradiente rosa para roxo escuro */
+    background: linear-gradient(135deg, #ffc9e1 0%, #180221 100%); /* Gradiente rosa para roxo escuro */
     color: rgb(0, 0, 0); /* Cor do texto preto */
     min-height: 80vh; /* Altura mínima de 80% da altura da tela */
     display: flex; /* Usa flexbox para layout */
