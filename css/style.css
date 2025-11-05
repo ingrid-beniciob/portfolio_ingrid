@@ -106,36 +106,59 @@ nav td:first-child a {
 
 /* Estiliza a seção hero (banner principal) */
 #hero {
-    background: linear-gradient(135deg, #f7cded 0%, #17021c 100%); /* Gradiente rosa-roxo */
-    color: rgb(0, 0, 0);        /*Cor*/
-    padding: 8rem 2rem 4rem; /* Espaçamento interno grande em cima */
-    text-align: left ;  /* Centraliza texto */
-    min-height: 100vh;   /* Altura mínima da tela inteira */
-    display: flex;       /* Usa flexbox */
-    flex-direction: column; /* Organiza em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    padding: 6rem 2rem; /* Espaçamento interno: 6rem em cima/baixo, 2rem nas laterais */
+    background: linear-gradient(135deg, #ffc9e1 0%, #350b47 100%); /* Gradiente rosa para roxo escuro */
+    color: rgb(0, 0, 0); /* Cor do texto preto */
+    min-height: 80vh; /* Altura mínima de 80% da altura da tela */
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
 }
 
-/* Estiliza o título principal */
-#hero h1 {
-    font-size: 3rem;     /* Tamanho grande da fonte */
-    margin-bottom: 1rem; /* Espaço abaixo */
-    font-weight: 700;    /* Negrito */
+/* Container do conteúdo da hero section */
+.hero-content {
+    max-width: 1400px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o container na página */
+    display: grid; /* Usa CSS Grid para layout */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 4rem; /* Espaço de 4rem entre as colunas */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
-/* Estiliza os parágrafos */
-#hero p {
-    font-size: 1.5rem;   /* Tamanho médio da fonte */
-    margin-bottom: 0.5rem; /* Pequeno espaço abaixo */
-    opacity: 0.9;        /* Leve transparência */
+/* Estiliza a parte de texto da hero */
+.hero-text h1 {
+    font-size: 3rem; /* Tamanho grande para o título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    font-weight: 700; /* Peso da fonte em negrito */
+    white-space: nowrap; /*Não deixa quebra de linha*/
 }
 
-/* Estiliza o último parágrafo */
+/* Estiliza os parágrafos do texto */
+.hero-text p {
+    font-size: 1.3rem; /* Tamanho médio para os parágrafos */
+    margin-bottom: 1.5rem; /* Espaço abaixo dos parágrafos */
+    opacity: 0.9; /* Leve transparência no texto */
+}
+
+/* Estiliza especificamente o último parágrafo */
 #hero p:last-of-type {
-    font-size: 1.2rem;   /* Tamanho menor */
+    font-size: 1.2rem;   /* Tamanho um pouco menor */
     margin-bottom: 2rem; /* Mais espaço abaixo */
     font-style: italic;  /* Texto em itálico */
+}
+
+/* Container da imagem na hero */
+.hero-image {
+    text-align: center; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estiliza a imagem propriamente dita */
+.hero-image img {
+    width: 300px; /* Largura fixa de 300px */
+    height: 300px; /* Altura fixa de 300px */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Ajusta a imagem para preencher o círculo sem distorcer */
+    border: 5px solid rgba(255, 255, 255, 0.2); /* Borda branca semi-transparente */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Sombra pronunciada ao redor */
 }
 
 /* Estiliza o link/botão da hero */
@@ -156,6 +179,65 @@ nav td:first-child a {
     border: #000000;
     background: rgb(0, 0, 0);   /* Fundo */
     color: #b7095d;     /* Cor texto */
+}
+
+/* ===== ANIMAÇÕES ===== */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.animate-fade-in-delay-2 {
+    animation: fadeIn 1s ease-out 0.6s both;
+}
+
+.animate-fade-in-delay-3 {
+    animation: fadeIn 1s ease-out 0.9s both;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 /* ===== SEÇÃO ABOUT ===== */
@@ -201,11 +283,13 @@ hr {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
     gap: 2rem;                                      /* Espaço entre os cards */
     margin-top: 3rem;                               /* Espaço acima */
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 /* Estiliza cada card de habilidade */
 .skill-card {
-    background: #f8f9fa;    /* Fundo cinza muito claro */
+    background: #ffc9e1;    /* Fundo  */
     padding: 2rem;          /* Espaçamento interno */
     border-radius: 10px;    /* Bordas arredondadas */
     text-align: center;     /* Texto centralizado */
@@ -219,7 +303,7 @@ hr {
 
 /* Título dentro do card */
 .skill-card h3 {
-    color: #007bff;     /* Cor azul */
+    color: #000000;     /* Cor */
     margin-bottom: 1rem; /* Espaço abaixo */
     font-size: 1.3rem;  /* Tamanho da fonte */
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Ingrid Benicio | Portifólio </title>
+    <link rel="icon" href="./assets/images/icon coração.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -30,20 +31,32 @@
     <!-- seção principal da tela-->
     <main>
         <section id="hero">
-            <!--"hero" se refere à seção de um site, geralmente no topo, que apresenta um banner grande e chamativo com uma imagem-->
-            <h1>Oiee, me chamo Ingrid Benicio</h1>
-            <p>Aspirante</p>
-            <p>Building the future, one line at a time.</p>
-            <a href="pages/projects.html">Conheça um pouco mais sobre minha trajetória e meus trabalhos →</a>
+            <div class="hero-content">
+                <!-- Conteúdo textual com animações -->
+                <div class="hero-text">
+                    <h1 class="animate-fade-in">Olá! Meu nome é Ingrid Benicio</h1>
+                    <p class="animate-fade-in-delay">Estudante do ensino médio integrado ao técnico em informática</p>
+                    <p class="animate-fade-in-delay-2">Building the future, one line at a time.</p>
+                    <a href="pages/projects.html" class="btn animate-fade-in-delay-3">Conheça um pouco mais sobre minha trajetória e meus trabalhos →</a>
+                </div>
+                
+                <!-- Sua imagem -->
+                <div class="hero-image">
+                    <img src="./assets/images/image.png" alt="Ingrid Benicio" class="animate-float">
+                </div>
+            </div>
         </section>
 
           
 
         <section id="about">
             <h2>Sobre mim</h2>
-            <p>Aspirante a desenvolvedora full-stack criando soluções end-to-end: apps, web e IoT. Transformo ideias em
-                experiências tecnológicas que conectam pessoas, resolvem problemas reais e tornam o digital mais
-                acessível para todos.</p>
+            <p>Sou uma estudante de tecnologia no SENAC apaixonada por transformar ideias em experiências que importam. Gosto de usar a tecnologia como ponte para conectar pessoas, resolver problemas reais e tornar o digital um espaço mais acessível para todos!</p>
+        </section>
+
+        <section id="skills">
+            <div id="skillsGrid" class="skills-grid">
+            </div>
         </section>
     </main>
 
@@ -99,6 +112,7 @@
     </footer>
 
     <script src="js/modal.js"></script>
+    <script src= "js/cards.js"></script>
 </body>
 
 </html>
