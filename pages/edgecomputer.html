@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head> <!--a parte de cima do site e oq nn aparece para o usuário-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Ingrid Benicio | Edge computer </title>
+        <link rel="icon" href="../assets/images/icon coração.png" type="image/png">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+
+    <body> <!--body é conteúdo da página -->
+
+        <header> <!--grupo de conteúdo introdutório ou de navegação-->
+            <nav>
+                <table>
+                    <tr>
+                        <td><a href="../index.html">Sobre mim</a></td>
+                        <td><a href="../pages/certifications.html">Certificações</a></td>
+                        <td><a href="../pages/projects.html">Projetos</a></td>
+                        <td><a href="../pages/events.html">Eventos</a></td>
+
+                    <td><button id="openModalBtn" onclick="openContactForm()">Contato</button></td>
+                    </tr>
+                </table>
+            </nav>
+
+        </header>
+
+        <!-- seção principal da tela-->
+        <main>
+            <section id="edge-computing">
+                <div class="edge-header">
+                    <h1>Edge Computing</h1>
+                    <p>Computação de borda: processamento de dados mais próximo da fonte</p>
+                </div>
+
+                <div class="edge-content">
+                    <div class="edge-image">
+                        <img src="../assets/images/img_edge.jpeg" alt="Edge Computing">
+                    </div>
+
+                    <div class="edge-info">
+                        <h2>O que é Edge Computing?</h2>
+                        <p>Edge computing é uma tecnologia que permite processar os dados próximos de onde eles são gerados, sem depender totalmente da nuvem. Isso torna as respostas mais rápidas, diminui o uso da internet e aumenta a segurança. Por exemplo, uma câmera inteligente pode analisar imagens no próprio local e reagir imediatamente, sem precisar enviar tudo para um servidor distante.</p>
+
+                        <h3>Vantagens Principais</h3>
+                        <ul>
+                            <li>✅ Redução significativa da latência</li>
+                            <li>✅ Menor consumo de banda</li>
+                            <li>✅ Maior segurança dos dados</li>
+                            <li>✅ Funcionamento offline</li>
+                            <li>✅ Escalabilidade melhorada</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="applications-section">
+                    <h2>Aplicações Práticas</h2>
+                    <div class="applications">
+                        <div class="app-card">
+                            <h4>🚗 Carros Autônomos</h4>
+                            <p>Processamento em tempo real para tomada de decisões</p>
+                        </div>
+                        <div class="app-card">
+                            <h4>🏭 Indústria 4.0</h4>
+                            <p>Monitoramento e controle de processos industriais</p>
+                        </div>
+                        <div class="app-card">
+                            <h4>🏥 Telemedicina</h4>
+                            <p>Processamento local de dados médicos sensíveis</p>
+                        </div>
+                        <div class="app-card">
+                            <h4>🏙 Cidades Inteligentes</h4>
+                            <p>Gerenciamento de tráfego e serviços urbanos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edge-cta">
+                    <h3>Quer saber mais?</h3>
+                    <p>Explore o conteúdo abaixo sobre Edge Computing</p>
+                    <a href="https://www.salesforce.com/br/blog/edge-computing/" class="cta-button">Acessar conteúdo externo</a>
+                    <a href="" class="cta-button secondary">Voltar às Tendências</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal do Formulário -->
+        <div class="overlay" id="overlay"></div>
+
+        <div class="modal" id="contactModal">
+                
+            <button id="closeModalBtn" onclick="closeContactForm()">X</button>
+            <h2>Entre em Contato</h2>
+                <form>
+                    <input type="text" placeholder="Nome" required>
+                    <input type="text" placeholder="Sobrenome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <textarea placeholder="Sua mensagem" rows="5"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+        </div>
+
+         <!-- seção rodapé da página-->
+        <footer>
+            <div class="rodape">
+                <div class="rodape-info">
+                    <h3>Ingrid Benicio</h3>
+                    <p>Estudante de tecnologia e aspirante a desenvolvedora full-stack, usando a tecnologia para transformar
+                        o mundo.</p>
+                </div>
+
+                <div class="rodape-links">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Sobre mim</a></li>
+                        <li><a href="pages/certifications.html">Certificações</a></li>
+                        <li><a href="pages/projects.html">Projetos</a></li>
+                    </ul>
+                </div>
+
+                <div class="rodape-social">
+                    <h4>Conectar</h4>
+                    <div class="social-icons">
+                        <!-- Ícones sociais (placeholder) -->
+                        <span>☐</span>
+                        <span>☐</span>
+                        <span>✅</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rodape-bottom">
+                <p>&copy; 2025 Ingrid Benicio. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="js/modal.js"></script>
+    </body>
+</html>
