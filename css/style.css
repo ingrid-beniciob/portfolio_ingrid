@@ -796,6 +796,212 @@ footer {
     }
 }
 
+/* === PÁGINA AUTOMAÇÃO E ROBÓTICA === */
+
+/* Container principal da seção Automação e Robótica */
+#automacao-robotica {
+    padding: 40px 20px; /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+/* Cabeçalho da página */
+.automacao-header {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 50px; /* Espaço abaixo do cabeçalho */
+}
+
+/* Título principal */
+.automacao-header h1 {
+    margin-top: 2rem; /*Margem em cima ddo título*/
+    font-size: 3rem; /* Tamanho grande da fonte */
+    color: #333; /* Cor cinza escuro */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+/* Subtítulo/descrição */
+.automacao-header p {
+    font-size: 1.3rem; /* Tamanho médio da fonte */
+    color: #666; /* Cor cinza médio */
+}
+
+/* Layout do conteúdo principal */
+.automacao-content {
+    display: grid; /* Usa CSS Grid para layout */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 50px; /* Espaço entre as colunas */
+    align-items: start; /* Alinha os itens no topo */
+    margin-bottom: 50px; /* Espaço abaixo desta seção */
+}
+
+/* Estilo da imagem */
+.automacao-image img {
+    width: 89%; /* Imagem ocupa espaço do container */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Títulos das seções de informação */
+.automacao-info h2 {
+    color: #333; /* Cor cinza escuro */
+    font-size: 2rem; /* Tamanho grande da fonte */
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* Subtítulos coloridos */
+.automacao-info h3 {
+    color: #ff69b4; /* Cor rosa */
+    font-size: 1.5rem; /* Tamanho médio da fonte */
+    margin: 30px 0 15px 0; /* Margem: 30px topo, 0 laterais, 15px baixo */
+}
+
+/* Parágrafos de texto */
+.automacao-info p {
+    color: #666; /* Cor cinza médio */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+}
+
+/* Lista não ordenada */
+.automacao-info ul {
+    color: #666; /* Cor cinza médio */
+    line-height: 1.8; /* Altura da linha maior para listas */
+    margin-bottom: 20px; /* Espaço abaixo da lista */
+}
+
+/* Itens da lista */
+.automacao-info li {
+    margin-bottom: 8px; /* Espaço entre os itens da lista */
+}
+
+/* ========== SEÇÃO DE APLICAÇÕES PRÁTICAS ========== */
+
+/* Container das aplicações práticas - LARGURA TOTAL */
+.applications-section {
+    width: 100%; /* Ocupa 100% da largura */
+    margin: 40px 0; /* Margem topo/baixo */
+}
+
+/* Título da seção aplicações */
+.applications-section h2 {
+    color: #333; /* Cor cinza escuro */
+    font-size: 2rem; /* Tamanho grande */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px; /* Espaço abaixo */
+}
+
+/* Grid de aplicações */
+.applications {
+    display: grid; /* Usa CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 20px; /* Espaço entre os cards */
+    margin: 20px 0; /* Margem: 20px topo/baixo */
+}
+
+/* Cards individuais de aplicação */
+.app-card {
+    background: #ececec; /* Cor de fundo cinza muito claro */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    border-left: 4px solid #ff69b4; /* Borda lateral rosa */
+}
+
+/* Título dos cards */
+.app-card h4 {
+    color: #333; /* Cor cinza escuro */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Texto dos cards */
+.app-card p {
+    color: #666; /* Cor cinza médio */
+    font-size: 0.9rem; /* Fonte um pouco menor */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* ========== SEÇÃO CTA ========== */
+
+/* Seção de call-to-action (chamada para ação) */
+.automacao-cta {
+    background: #ff69b4; /* Fundo rosa */
+    padding: 30px; /* Espaçamento interno generoso */
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center; /* Texto centralizado */
+    margin-top: 40px; /* Espaço acima da seção */
+    width: 100%; /* Ocupa largura total */
+}
+
+/* Título do CTA */
+.automacao-cta h3 {
+    color: white; /* Texto branco */
+    margin-bottom: 10px; /* Espaço abaixo */
+}
+
+/* Parágrafo do CTA */
+.automacao-cta p {
+    color: white; /* Texto branco */
+    opacity: 0.9; /* Leve transparência */
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* Botão principal */
+.cta-button {
+    display: inline-block; /* Display inline-block para aceitar padding */
+    background: white; /* Fundo branco */
+    color: #ff69b4; /* Texto rosa */
+    padding: 12px 30px; /* Espaçamento interno confortável */
+    border-radius: 25px; /* Bordas completamente arredondadas (pill) */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-weight: 600; /* Texto em negrito */
+    margin: 0 10px; /* Margem lateral entre botões */
+    transition: all 0.3s ease; /* Transição suave para hover */
+}
+
+/* Botão secundário */
+.cta-button.secondary {
+    background: transparent; /* Fundo transparente */
+    color: white; /* Texto branco */
+    border: 2px solid white; /* Borda branca */
+}
+
+/* Efeito hover nos botões */
+.cta-button:hover {
+    transform: translateY(-2px); /* Levanta o botão levemente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra */
+}
+
+/* ========== RESPONSIVIDADE AUTOMAÇÃO ========== */
+
+/* Tablets e celulares */
+@media (max-width: 768px) {
+    /* Layout em uma coluna para mobile */
+    .automacao-content {
+        grid-template-columns: 1fr; /* Uma coluna apenas */
+        gap: 30px; /* Reduz o espaço entre elementos */
+    }
+    
+    /* Título menor em mobile */
+    .automacao-header h1 {
+        font-size: 2.5rem; /* Reduz tamanho da fonte */
+    }
+    
+    /* Aplicações em uma coluna */
+    .applications {
+        grid-template-columns: 1fr; /* Uma coluna para mobile */
+    }
+    
+    /* Reduz padding no mobile */
+    .automacao-cta {
+        padding: 20px; /* Menos padding em telas pequenas */
+    }
+    
+    /* Botões em bloco para mobile */
+    .cta-button {
+        display: block; /* Botões em bloco (um embaixo do outro) */
+        margin: 10px 0; /* Margem apenas topo/baixo */
+    }
+}
+
 /* ===== RESPONSIVIDADE ===== */
 
 /* Tablets e telas menores */

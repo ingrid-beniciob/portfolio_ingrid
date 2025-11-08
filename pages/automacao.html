@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head> <!--a parte de cima do site e oq nn aparece para o usuário-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Ingrid Benicio | Automação & Robótica </title>
+        <link rel="icon" href="../assets/images/icon coração.png" type="image/png">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+
+    <body> <!--body é conteúdo da página -->
+
+        <header> <!--grupo de conteúdo introdutório ou de navegação-->
+            <nav>
+                <table>
+                    <tr>
+                        <td><a href="../index.html">Sobre mim</a></td>
+                        <td><a href="../pages/certifications.html">Certificações</a></td>
+                        <td><a href="../pages/projects.html">Projetos</a></td>
+                        <td><a href="../pages/events.html">Eventos</a></td>
+
+                    <td><button id="openModalBtn" onclick="openContactForm()">Contato</button></td>
+                    </tr>
+                </table>
+            </nav>
+
+        </header>
+
+        <!-- seção principal da tela-->
+        <main>
+            <section id="automacao-robotica">
+                <div class="automacao-header">
+                    <h1>Automação & Robótica</h1>
+                    <p>Revolucionando indústrias e o cotidiano através da tecnologia inteligente</p>
+                </div>
+
+                <div class="automacao-content">
+                    <div class="automacao-image">
+                        <img src="../assets/images/automacao_img.jpeg" alt="Edge Computing">
+                    </div>
+
+                    <div class="automacao-info">
+                        <h2>O que é Automação e Robótica?</h2>
+                        <p>A automação e a robótica utilizam sistemas computadorizados e robôs para realizar tarefas que antes eram executadas por humanos. Essa integração de tecnologia aumenta a eficiência, a precisão e a segurança dos processos, além de reduzir erros e otimizar o tempo em diversos setores da indústria e do cotidiano.</p>
+
+                        <h3>Vantagens Principais</h3>
+                        <ul>
+                            <li>✅ Aumento da produtividade e eficiência</li>
+                            <li>✅ Redução de erros humanos</li>
+                            <li>✅ Operação 24/7 sem interrupções</li>
+                            <li>✅ Melhoria na segurança do trabalho</li>
+                            <li>✅ Qualidade consistente nos processos</li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+                     
+                <div class="applications-section">
+                    <h2>Aplicações Práticas</h2>
+                    <div class="applications">
+                        <div class="app-card">
+                            <h4>🏭 Indústria 4.0</h4>
+                            <p>Linhas de produção automatizadas com robôs colaborativos e IoT</p>
+                        </div>
+
+                        <div class="app-card">
+                            <h4>🏥 Cirurgia Robótica</h4>
+                            <p>Procedimentos médicos de alta precisão com assistência robótica</p>
+                        </div>
+
+                        <div class="app-card">
+                            <h4>🚗 Veículos Autônomos</h4>
+                            <p>Sistemas de direção automática e assistência ao condutor</p>
+                        </div>
+                        
+                        <div class="app-card">
+                            <h4>🏠 Domótica</h4>
+                            <p>Automação residencial para conforto e eficiência energética</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seção CTA -->
+                <div class="automacao-cta">
+                    <h3>Quer saber mais?</h3>
+                    <p>Explore o conteúdo abaixo sobre Automação e Robótica</p>
+                    <a href="https://www.totvs.com/blog/gestao-industrial/automacao-robotica/" class="cta-button">Acessar conteúdo externo</a>
+                    <a href="../index.html" class="cta-button secondary">Voltar às Tendências</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal do Formulário -->
+        <div class="overlay" id="overlay"></div>
+
+        <div class="modal" id="contactModal">
+                
+            <button id="closeModalBtn" onclick="closeContactForm()">X</button>
+            <h2>Entre em Contato</h2>
+                <form>
+                    <input type="text" placeholder="Nome" required>
+                    <input type="text" placeholder="Sobrenome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <textarea placeholder="Sua mensagem" rows="5"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+        </div>
+
+         <!-- seção rodapé da página-->
+        <footer>
+            <div class="rodape">
+                <div class="rodape-info">
+                    <h3>Ingrid Benicio</h3>
+                    <p>Estudante de tecnologia e aspirante a desenvolvedora full-stack, usando a tecnologia para transformar
+                        o mundo.</p>
+                </div>
+
+                <div class="rodape-links">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Sobre mim</a></li>
+                        <li><a href="../pages/certifications.html">Certificações</a></li>
+                        <li><a href="../pages/projects.html">Projetos</a></li>
+                    </ul>
+                </div>
+
+                <div class="rodape-social">
+                    <h4>Conectar</h4>
+                    <div class="social-icons">
+                        <!-- Ícones sociais (placeholder) -->
+                        <span>☐</span>
+                        <span>☐</span>
+                        <span>✅</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rodape-bottom">
+                <p>&copy; 2025 Ingrid Benicio. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="../js/modal.js"></script>
+    </body>
+</html>
