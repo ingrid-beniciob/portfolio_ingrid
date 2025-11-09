@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrid Benicio | Cybersecurity</title>
+    <link rel="icon" href="../assets/images/icon coração.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <table>
+                <tr>
+                    <td><a href="../index.html">Sobre mim</a></td>
+                    <td><a href="../pages/certifications.html">Certificações</a></td>
+                    <td><a href="../pages/projects.html">Projetos</a></td>
+                    <td><a href="../pages/events.html">Eventos</a></td>
+                    <td><button id="openModalBtn" onclick="openContactForm()">Contato</button></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cybersecurity">
+            <div class="cyber-header">
+                <h1>Cybersecurity</h1>
+                <p>Protegendo sistemas, redes e dados contra ameaças digitais</p>
+            </div>
+
+            <div class="cyber-content">
+                <div class="cyber-image">
+                    <img src="../assets/images/cybersecurity_img.jpeg" alt="Cybersecurity">
+                </div>
+
+                <div class="cyber-info">
+                    <h2>O que é Cybersecurity?</h2>
+                    <p>Cybersecurity é a área responsável por proteger computadores, redes, sistemas e dados contra acessos não autorizados, ataques virtuais e danos. Ela envolve o uso de tecnologias, práticas e estratégias que garantem a segurança das informações, evitando invasões, vazamentos e fraudes digitais. O principal objetivo da cibersegurança é manter a confidencialidade, a integridade e a disponibilidade dos dados, ou seja, assegurar que apenas pessoas autorizadas tenham acesso, que as informações permaneçam corretas e que os sistemas continuem funcionando sem interrupções.</p>
+
+                    <h3>Pilares Principais</h3>
+                    <ul>
+                        <li>✅ Segurança de rede e infraestrutura</li>
+                        <li>✅ Proteção de dados e informações</li>
+                        <li>✅ Segurança de aplicações</li>
+                        <li>✅ Educação e conscientização do usuário</li>
+                        <li>✅ Gestão de riscos e continuidade de negócios</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="applications-section">
+                <h2>Áreas de Atuação</h2>
+                <div class="applications">
+                    <div class="app-card">
+                        <h4>🛡️ Segurança Corporativa</h4>
+                        <p>Proteção de infraestrutura empresarial contra ciberataques</p>
+                    </div>
+                    <div class="app-card">
+                        <h4>🔒 Criptografia</h4>
+                        <p>Proteção de dados através de algoritmos de criptografia avançados</p>
+                    </div>
+                    <div class="app-card">
+                        <h4>🔍 Pentesting</h4>
+                        <p>Testes de invasão para identificar vulnerabilidades em sistemas</p>
+                    </div>
+                    <div class="app-card">
+                        <h4>📱 Segurança Móvel</h4>
+                        <p>Proteção de dispositivos móveis e aplicações</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cyber-cta">
+                <h3>Quer saber mais?</h3>
+                <p>Explore o conteúdo abaixo sobre Cybersecurity e proteção digital</p>
+                <a href="https://www.bry.com.br/blog/o-que-e-ciberseguranca/" class="cta-button">Acessar conteúdo externo</a>
+                <a href="../index.html" class="cta-button secondary">Voltar às Tendências</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal do Formulário -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="modal" id="contactModal">
+        <button id="closeModalBtn" onclick="closeContactForm()">X</button>
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="text" placeholder="Sobrenome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" rows="5"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <div class="rodape-info">
+                <h3>Ingrid Benicio</h3>
+                <p>Estudante de tecnologia e aspirante a desenvolvedora full-stack, usando a tecnologia para transformar
+                    o mundo.</p>
+            </div>
+
+            <div class="rodape-links">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Sobre mim</a></li>
+                    <li><a href="../pages/certifications.html">Certificações</a></li>
+                    <li><a href="../pages/projects.html">Projetos</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape-social">
+                <h4>Conectar</h4>
+                <div class="social-icons">
+                    <span>☐</span>
+                    <span>☐</span>
+                    <span>✅</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape-bottom">
+            <p>&copy; 2025 Ingrid Benicio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/modal.js"></script>
+</body>
+</html>*

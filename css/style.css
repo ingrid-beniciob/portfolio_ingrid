@@ -1216,6 +1216,130 @@ footer {
     }
 }
 
+/* === PÁGINA CYBERSECURITY === */
+
+/* Container principal da seção Cybersecurity */
+#cybersecurity {
+    padding: 40px 20px; /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+/* Cabeçalho da página */
+.cyber-header {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 50px; /* Espaço abaixo do cabeçalho */
+}
+
+/* Título principal */
+.cyber-header h1 {
+    margin-top: 2rem;
+    font-size: 3rem; /* Tamanho grande da fonte */
+    color: #333; /* Cor cinza escuro */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+/* Subtítulo/descrição */
+.cyber-header p {
+    font-size: 1.3rem; /* Tamanho médio da fonte */
+    color: #666; /* Cor cinza médio */
+}
+
+/* Layout do conteúdo principal */
+.cyber-content {
+    display: grid; /* Usa CSS Grid para layout */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 50px; /* Espaço entre as colunas */
+    align-items: start; /* Alinha os itens no topo */
+    margin-bottom: 50px; /* Espaço abaixo desta seção */
+}
+
+/* Estilo da imagem */
+.cyber-image img {
+    width: 100%; /* Imagem ocupa 100% do container */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Títulos das seções de informação */
+.cyber-info h2 {
+    color: #333; /* Cor cinza escuro */
+    font-size: 2rem; /* Tamanho grande da fonte */
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* Subtítulos coloridos */
+.cyber-info h3 {
+    color: #ff69b4; /* Cor rosa */
+    font-size: 1.5rem; /* Tamanho médio da fonte */
+    margin: 30px 0 15px 0; /* Margem: 30px topo, 0 laterais, 15px baixo */
+}
+
+/* Parágrafos de texto */
+.cyber-info p {
+    color: #666; /* Cor cinza médio */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+}
+
+/* Lista não ordenada */
+.cyber-info ul {
+    color: #666; /* Cor cinza médio */
+    line-height: 1.8; /* Altura da linha maior para listas */
+    margin-bottom: 20px; /* Espaço abaixo da lista */
+}
+
+/* Itens da lista */
+.cyber-info li {
+    margin-bottom: 8px; /* Espaço entre os itens da lista */
+}
+
+/* ========== SEÇÃO CTA CYBERSECURITY ========== */
+
+/* Seção de call-to-action (chamada para ação) */
+.cyber-cta {
+    background: #ff69b4; /* Fundo rosa */
+    padding: 30px; /* Espaçamento interno generoso */
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center; /* Texto centralizado */
+    margin-top: 40px; /* Espaço acima da seção */
+    width: 100%; /* Ocupa largura total */
+}
+
+/* Título do CTA */
+.cyber-cta h3 {
+    color: white; /* Texto branco */
+    margin-bottom: 10px; /* Espaço abaixo */
+}
+
+/* Parágrafo do CTA */
+.cyber-cta p {
+    color: white; /* Texto branco */
+    opacity: 0.9; /* Leve transparência */
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* ========== RESPONSIVIDADE CYBERSECURITY ========== */
+
+/* Tablets e celulares */
+@media (max-width: 768px) {
+    /* Layout em uma coluna para mobile */
+    .cyber-content {
+        grid-template-columns: 1fr; /* Uma coluna apenas */
+        gap: 30px; /* Reduz o espaço entre elementos */
+    }
+    
+    /* Título menor em mobile */
+    .cyber-header h1 {
+        font-size: 2.5rem; /* Reduz tamanho da fonte */
+    }
+    
+    /* Reduz padding no mobile */
+    .cyber-cta {
+        padding: 20px; /* Menos padding em telas pequenas */
+    }
+}
+
 /* ===== RESPONSIVIDADE DO PORTIFÓLIO ===== */
 
 /* Tablets e telas menores */
