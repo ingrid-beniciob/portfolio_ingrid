@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head> <!--a parte de cima do site e oq nn aparece para o usuário-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Ingrid Benicio | Blockchain </title>
+        <link rel="icon" href="../assets/images/icon coração.png" type="image/png">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+
+    <body> <!--body é conteúdo da página -->
+
+        <header> <!--grupo de conteúdo introdutório ou de navegação-->
+            <nav>
+                <table>
+                    <tr>
+                        <td><a href="../index.html">Sobre mim</a></td>
+                        <td><a href="../pages/certifications.html">Certificações</a></td>
+                        <td><a href="../pages/projects.html">Projetos</a></td>
+                        <td><a href="../pages/events.html">Eventos</a></td>
+
+                    <td><button id="openModalBtn" onclick="openContactForm()">Contato</button></td>
+                    </tr>
+                </table>
+            </nav>
+
+        </header>
+
+        <!-- seção principal da tela-->
+        <main>
+            <section id="blockchain">
+                <div class="block-header">
+                    <h1>Blockchain</h1>
+                    <p>Tecnologia descentralizada que está transformando a confiança digital</p>
+                </div>
+
+                <div class="block-content">
+                    <div class="block-image">
+                        <img src="../assets/images/img_blockchain.jpeg" alt="Blockchain Technology">
+                    </div>
+
+                    <div class="block-info">
+                       <div class="blockchain-info">
+                            <h2>O que é Blockchain?</h2>
+                            <p>Blockchain é uma tecnologia que funciona como um grande livro de registros digital, onde todas as informações são organizadas em blocos ligados em sequência, formando uma cadeia, daí o nome blockchain (“corrente de blocos”). Cada bloco contém dados, como transações, contratos ou registros, além de um código chamado hash, que serve como uma assinatura digital única. Esse hash conecta cada bloco ao anterior, garantindo que as informações não possam ser alteradas sem que toda a cadeia seja modificada.</p>
+
+                            <h3>Características Principais</h3>
+                            <ul>
+                                <li>✅ Descentralização - Sem intermediários</li>
+                                <li>✅ Transparência - Todas as transações são visíveis</li>
+                                <li>✅ Imutabilidade - Dados não podem ser alterados</li>
+                                <li>✅ Segurança - Criptografia avançada</li>
+                                <li>✅ Consenso - Validação distribuída</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="applications-section">
+                    <h2>Aplicações Práticas</h2>
+                    <div class="applications">
+                        <div class="app-card">
+                            <h4>₿ Criptomoedas</h4>
+                            <p>Bitcoin, Ethereum e outras moedas digitais descentralizadas</p>
+                        </div>
+
+                        <div class="app-card">
+                            <h4>📄 Smart Contracts</h4>
+                            <p>Contratos autoexecutáveis sem intermediários</p>
+                        </div>
+
+                        <div class="app-card">
+                            <h4>🏦 Finanças Descentralizadas</h4>
+                            <p>Serviços financeiros sem instituições tradicionais</p>                        
+                        </div>
+
+                        <div class="app-card">
+                            <h4>🆔 Identidade Digital</h4>
+                            <p>Gestão segura de identidade e documentos</p>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="blockchain-cta">
+                    <h3>Quer saber mais?</h3>
+                    <p>Explore o conteúdo abaixo sobre Blockchain e suas aplicações</p>
+                    <a href="https://aws.amazon.com/pt/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc" class="cta-button">Acessar conteúdo externo</a>
+                    <a href="../index.html" class="cta-button secondary">Voltar às Tendências</a>
+                </div>
+
+            </section>
+        </main>
+
+        
+
+        <!-- Modal do Formulário -->
+        <div class="overlay" id="overlay"></div>
+
+        <div class="modal" id="contactModal">
+                
+            <button id="closeModalBtn" onclick="closeContactForm()">X</button>
+            <h2>Entre em Contato</h2>
+                <form>
+                    <input type="text" placeholder="Nome" required>
+                    <input type="text" placeholder="Sobrenome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <textarea placeholder="Sua mensagem" rows="5"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+        </div>
+
+         <!-- seção rodapé da página-->
+        <footer>
+            <div class="rodape">
+                <div class="rodape-info">
+                    <h3>Ingrid Benicio</h3>
+                    <p>Estudante de tecnologia e aspirante a desenvolvedora full-stack, usando a tecnologia para transformar
+                        o mundo.</p>
+                </div>
+
+                <div class="rodape-links">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Sobre mim</a></li>
+                        <li><a href="../pages/certifications.html">Certificações</a></li>
+                        <li><a href="../pages/projects.html">Projetos</a></li>
+                    </ul>
+                </div>
+
+                <div class="rodape-social">
+                    <h4>Conectar</h4>
+                    <div class="social-icons">
+                        <!-- Ícones sociais (placeholder) -->
+                        <span>☐</span>
+                        <span>☐</span>
+                        <span>✅</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rodape-bottom">
+                <p>&copy; 2025 Ingrid Benicio. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="../js/modal.js"></script>
+    </body>
+</html>
