@@ -90,8 +90,8 @@ nav a:hover {
 
 /* Efeito hover no botão */
 #openModalBtn:hover {
-    border: #000000;
-    background: rgb(0, 0, 0);   /* Fundo branco */
+    border: #202122;
+    background: #202122;   /* Fundo branco */
     color: #d393b2
 }
 
@@ -169,8 +169,8 @@ nav a:hover {
 
 /* Efeito hover no botão */
 #hero a:hover {
-    border: #000000;
-    background: rgb(0, 0, 0);   /* Fundo */
+    border: #202122;
+    background:#202122;   /* Fundo */
     color: #d393b2;     /* Cor texto */
 }
 
@@ -764,37 +764,6 @@ footer {
     transform: translateY(-2px); /* Levanta o botão levemente */
     box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra */
 }
-/* ========== RESPONSIVIDADE EDGE COMPUTING ========== */
-
-/* Tablets e celulares */
-@media (max-width: 768px) {
-    /* Layout em uma coluna para mobile */
-    .edge-content {
-        grid-template-columns: 1fr; /* Uma coluna apenas */
-        gap: 30px; /* Reduz o espaço entre elementos */
-    }
-    
-    /* Título menor em mobile */
-    .edge-header h1 {
-        font-size: 2.5rem; /* Reduz tamanho da fonte */
-    }
-    
-    /* Aplicações em uma coluna */
-    .applications {
-        grid-template-columns: 1fr; /* Uma coluna para mobile */
-    }
-    
-    /* Reduz padding no mobile */
-    .edge-cta {
-        padding: 20px; /* Menos padding em telas pequenas */
-    }
-    
-    /* Botões em bloco para mobile */
-    .cta-button {
-        display: block; /* Botões em bloco (um embaixo do outro) */
-        margin: 10px 0; /* Margem apenas topo/baixo */
-    }
-}
 
 /* === PÁGINA AUTOMAÇÃO E ROBÓTICA === */
 
@@ -970,37 +939,6 @@ footer {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra */
 }
 
-/* ========== RESPONSIVIDADE AUTOMAÇÃO ========== */
-
-/* Tablets e celulares */
-@media (max-width: 768px) {
-    /* Layout em uma coluna para mobile */
-    .automacao-content {
-        grid-template-columns: 1fr; /* Uma coluna apenas */
-        gap: 30px; /* Reduz o espaço entre elementos */
-    }
-    
-    /* Título menor em mobile */
-    .automacao-header h1 {
-        font-size: 2.5rem; /* Reduz tamanho da fonte */
-    }
-    
-    /* Aplicações em uma coluna */
-    .applications {
-        grid-template-columns: 1fr; /* Uma coluna para mobile */
-    }
-    
-    /* Reduz padding no mobile */
-    .automacao-cta {
-        padding: 20px; /* Menos padding em telas pequenas */
-    }
-    
-    /* Botões em bloco para mobile */
-    .cta-button {
-        display: block; /* Botões em bloco (um embaixo do outro) */
-        margin: 10px 0; /* Margem apenas topo/baixo */
-    }
-}
 
 /* === PÁGINA BLOCKCHAIN === */
 
@@ -1178,43 +1116,6 @@ footer {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra */
 }
 
-/* ========== RESPONSIVIDADE BLOCKCHAIN ========== */
-
-/* Tablets e celulares */
-@media (max-width: 768px) {
-    /* Layout em uma coluna para mobile */
-    .block-content {
-        grid-template-columns: 1fr; /* Uma coluna apenas */
-        gap: 30px; /* Reduz o espaço entre elementos */
-    }
-    
-    /* Título menor em mobile */
-    .block-header h1 {
-        font-size: 2.5rem; /* Reduz tamanho da fonte */
-    }
-    
-    /* Aplicações em uma coluna */
-    .applications {
-        grid-template-columns: 1fr; /* Uma coluna para mobile */
-    }
-    
-    /* Reduz padding no mobile */
-    .blockchain-cta {
-        padding: 20px; /* Menos padding em telas pequenas */
-    }
-    
-    /* Botões em bloco para mobile */
-    .cta-button {
-        display: block; /* Botões em bloco (um embaixo do outro) */
-        margin: 10px 0; /* Margem apenas topo/baixo */
-    }
-    
-    /* Corrige grid column para mobile */
-    .applications-section,
-    .blockchain-cta {
-        grid-column: 1; /* Apenas uma coluna no mobile */
-    }
-}
 
 /* === PÁGINA CYBERSECURITY === */
 
@@ -1319,70 +1220,229 @@ footer {
     margin-bottom: 20px; /* Espaço abaixo */
 }
 
-/* ========== RESPONSIVIDADE CYBERSECURITY ========== */
 
-/* Tablets e celulares */
-@media (max-width: 768px) {
-    /* Layout em uma coluna para mobile */
-    .cyber-content {
-        grid-template-columns: 1fr; /* Uma coluna apenas */
-        gap: 30px; /* Reduz o espaço entre elementos */
-    }
-    
-    /* Título menor em mobile */
-    .cyber-header h1 {
-        font-size: 2.5rem; /* Reduz tamanho da fonte */
-    }
-    
-    /* Reduz padding no mobile */
-    .cyber-cta {
-        padding: 20px; /* Menos padding em telas pequenas */
-    }
+
+/* === PÁGINA DE CERTIFICADOS === */
+
+/* Remove margens e paddings padrão do body e html para o gradiente cobrir toda a tela */
+html, body {
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove paddings padrão do navegador */
 }
 
-/* ===== RESPONSIVIDADE DO PORTIFÓLIO ===== */
-
-/* Tablets e telas menores */
-@media (max-width: 768px) {
-    /* Navegação em coluna em telas pequenas */
-    nav tr {
-        flex-direction: column; /* Muda para coluna */
-        gap: 1rem;              /* Espaço entre itens */
-        padding: 1rem;          /* Menos padding */
-    }
-    
-    /* Título menor em mobile */
-    #hero h1 {
-        font-size: 2rem;    /* Tamanho menor */
-    }
-    
-    /* Texto menor em mobile */
-    #hero p {
-        font-size: 1.2rem;  /* Tamanho menor */
-    }
-    
-    /* Rodapé em uma coluna */
-    .rodape {
-        grid-template-columns: 1fr; /* Uma coluna apenas */
-        text-align: center;         /* Texto centralizado */
-    }
-    
-    /* Modal mais largo em mobile */
-    .modal {
-        min-width: 90%;     /* Ocupa 90% da tela */
-        padding: 1.5rem;    /* Menos padding */
-    }
+/* Container principal com gradiente que cobre toda a tela */
+#certificados {
+    padding: 40px 120px; /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    min-height: 100vh; /* Altura mínima de 100% da viewport */
+    background: linear-gradient(135deg, #ffc9e1 0%, #180221 100%); /* Gradiente rosa para roxo escuro */
+    width: 100%; /* Largura de 100% da tela */
+    box-sizing: border-box; /* Inclui padding na largura total */
 }
 
-/* Celulares muito pequenos */
-@media (max-width: 480px) {
-    /* Menos padding na hero */
-    #hero {
-        padding: 6rem 1rem 3rem; /* Padding reduzido */
-    }
-    
-    /* Menos padding na seção about */
-    #about {
-        padding: 2rem 1rem; /* Padding reduzido */
-    }
+/* Container do conteúdo para centralizar e limitar a largura */
+.certs-container {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
 }
+
+/* Cabeçalho da página de certificados */
+.certs-header {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 50px; /* Espaço abaixo do cabeçalho */
+}
+
+/* Título principal da página */
+.certs-header h1 {
+    margin-top: 2rem; /* Espaço acima do título */
+    font-size: 3rem; /* Tamanho grande da fonte */
+    color: rgb(0, 0, 0); /* Cor do texto branca para contraste com o gradiente escuro */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Sombra suave no texto para melhor legibilidade */
+}
+
+/* Descrição do cabeçalho */
+.certs-header p {
+    font-size: 1.3rem; /* Tamanho médio da fonte */
+    color: rgba(0, 0, 0, 0.9); /* Branco com leve transparência */
+}
+
+/* Grid que contém todos os cards de certificados */
+.certs-grid {
+    display: grid; /* Usa CSS Grid para layout */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Colunas responsivas que se ajustam automaticamente */
+    gap: 30px; /* Espaço entre os cards do grid */
+    margin-bottom: 50px; /* Espaço abaixo do grid */
+}
+
+/* Card individual de cada certificado */
+.cert-card {
+    background: #e9e9e9; /* Cor cinza clara */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave ao redor do card */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para hover */
+    display: flex; /* Usa flexbox para layout interno */
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+/* Efeito quando o mouse passa sobre o card */
+.cert-card:hover {
+    transform: translateY(-5px); /* Move o card 5px para cima */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15); /* Aumenta a sombra no hover */
+}
+
+/* Container da imagem do certificado */
+.cert-image {
+    height: 250px; /* Altura aumentada para acomodar melhor a imagem */
+    overflow: visible; /* Permite que a imagem seja exibida completamente sem cortes */
+    display: flex; /* Layout flexbox para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 5px; /* Espaçamento interno ao redor da imagem */
+}
+
+/* Estilo da imagem dentro do card */
+.cert-image img {
+    width: 280px; /* Largura fixa para consistência entre cards */
+    height: auto; /* Altura automática para manter proporção original */
+    border-radius: 5%; /* Bordas levemente arredondadas */
+    margin: 0.50rem auto; /* Centralização com espaçamento vertical reduzido */
+    object-fit: contain; /* Garante que toda a imagem seja visível sem distorção */
+    max-height: 230px; /* Altura máxima para evitar que a imagem fique muito grande */
+}
+
+/* Efeito de zoom na imagem quando o card é hover */
+.cert-card:hover .cert-image img {
+    transform: scale(1.05); /* Aumenta a imagem em 5% */
+}
+
+/* Container das informações textuais do certificado */
+.cert-info {
+    padding: 25px; /* Espaçamento interno */
+    flex-grow: 1; /* Ocupa todo o espaço disponível restante */
+    display: flex; /* Flexbox para alinhamento interno */
+    flex-direction: column; /* Organiza em coluna */
+}
+
+/* Título do certificado */
+.cert-info h3 {
+    color: #333; /* Cor cinza escuro */
+    font-size: 1.3rem; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaço abaixo */
+    font-weight: 600; /* Peso da fonte semi-negrito */
+}
+
+/* Organização/empresa que emitiu o certificado */
+.cert-org {
+    color: #ff69b4; /* Cor rosa para destacar a organização */
+    font-weight: 600; /* Texto em negrito */
+    margin-bottom: 10px; /* Espaço abaixo */
+    font-size: 0.9rem; /* Fonte um pouco menor */
+}
+
+/* Descrição do certificado */
+.cert-desc {
+    color: #666; /* Cor cinza médio */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 15px; /* Espaço abaixo */
+    flex-grow: 1; /* Ocupa espaço disponível para alinhar categorias no final */
+}
+
+/* Categoria/tag do certificado */
+.cert-category {
+    background: #f8f9fa; /* Fundo cinza muito claro */
+    color: #333; /* Cor do texto cinza escuro */
+    padding: 5px 12px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas completamente arredondadas */
+    font-size: 0.8rem; /* Fonte pequena */
+    font-weight: 600; /* Texto em negrito */
+    align-self: flex-start; /* Alinha à esquerda */
+    border: 1px solid #e9ecef; /* Borda sutil */
+}
+
+/* Seção "Cursando Atualmente" */
+.certs-current {
+    background:#202122; /* Fundo branco semi-transparente */
+    padding: 40px; /* Espaçamento interno generoso */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-top: 40px; /* Espaço acima da seção */
+    max-width: 900px; /* Largura máxima */
+    margin-left: auto; /* Centraliza a seção */
+    margin-right: auto; /* Centraliza a seção */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+}
+
+/* Título da seção */
+.certs-current h3 {
+    color: #ffffff; /* Cor cinza escuro */
+    font-size: 1.8rem; /* Tamanho grande da fonte */
+    margin-bottom: 15px; /* Espaço abaixo */
+    text-align: center; /* Texto centralizado */
+}
+
+/* Descrição da seção */
+.certs-current p {
+    color: #ffffff; /* Cor cinza médio */
+    margin-bottom: 30px; /* Espaço abaixo */
+    font-size: 1.1rem; /* Tamanho médio da fonte */
+    text-align: center; /* Texto centralizado */
+}
+
+/* Grid dos cursos atuais */
+.current-courses {
+    display: grid; /* Usa CSS Grid para layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaço entre os itens */
+    margin-bottom: 30px; /* Espaço abaixo do grid */
+}
+
+/* Item individual do curso */
+.course-item {
+    background: #e9e9e9; /* Cor cinza clara */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    border-left: 4px solid #ff69b4; /* Borda lateral rosa */
+    transition: transform 0.3s ease; /* Transição suave para hover */
+}
+
+/* Efeito hover nos itens de curso */
+.course-item:hover {
+    transform: translateY(-3px); /* Move o item para cima levemente */
+}
+
+/* Nome do curso */
+.course-item h4 {
+    text-align: center;
+    color: #333; /* Cor cinza escuro */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    margin-bottom: 8px; /* Espaço abaixo */
+    font-weight: 600; /* Texto em negrito */
+}
+
+/* Instituição do curso */
+.course-item .course-org {
+    color: #ff69b4; /* Cor rosa */
+    font-weight: 600; /* Texto em negrito */
+    font-size: 0.9rem; /* Fonte um pouco menor */
+    margin-bottom: 10px; /* Espaço abaixo */
+}
+
+/* Descrição do curso */
+.course-item .course-desc {
+    color: #666; /* Cor cinza médio */
+    font-size: 0.9rem; /* Fonte menor */
+    line-height: 1.5; /* Altura da linha */
+}
+
+/* Container dos botões */
+.certs-buttons {
+    display: flex; /* Usa flexbox para os botões */
+    justify-content: center; /* Centraliza os botões */
+    gap: 20px; /* Espaço entre os botões */
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+}
+
+
+
+

@@ -54,8 +54,20 @@
             <p>Sou uma estudante de tecnologia no SENAC apaixonada por transformar ideias em experiências que importam. Gosto de usar a tecnologia como ponte para conectar pessoas, resolver problemas reais e tornar o digital um espaço mais acessível para todos!</p>
         </section>
 
-        <section id="skills">
-            <div id="skillsGrid" class="skills-grid">
+        <!-- Container grid para os cards de habilidades -->
+         <section>
+            <div class="skills-grid">
+                <!-- Card de Soft Skills -->
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <p>Proatividade, liderança, comunicação, trabalho em equipe, resolução de problemas, pensamento crítico e motivação contínua para aprender com as melhores práticas.</p>
+                </div>
+                
+                <!-- Card de Hard Skills -->
+                <div class="skill-card">
+                    <h3>Hard Skills</h3>
+                    <p>Java, Python, SQL, HTML5, CSS3, Redes de computadores, IoT, Prototipagem, Banco de dados Oracle.</p>
+                </div>
             </div>
         </section>
 
@@ -75,42 +87,42 @@
                 <div class="trend-card">
                     <h3>Automação e robótica</h3>
                     <p> Envolvem o uso de sistemas computadorizados e robôs para executar tarefas que ante eram manufaturadas.</p>
-                    <a href="./pages/automacao.html" class="trend-btn">Saiba mais</a>
+                    <a href="./pages/automation.html" class="trend-btn">Saiba mais</a>
                 </div>
                 
                 <!-- Card 3 -->
                 <div class="trend-card">
                     <h3>Blockchain</h3>
-                    <p>lorem ipsum lorem ipsum lorem ipsum</p>
-                    <a href="./pages/trends.html" class="trend-btn">Saiba mais</a>
+                    <p>Um livro-razão digital descentralizado que registra transações de forma segura, transparente e imutável. </p>
+                    <a href="./pages/blockchain.html" class="trend-btn">Saiba mais</a>
                 </div>
                 
                 <!-- Card 4 -->
                 <div class="trend-card">
-                    <h3>Cybersegurança<area shape="" coords="" href="" alt=""></h3>
-                    <p>lorem ipsum lorem ipsum lorem ipsum</p>
-                    <a href="./pages/trends.html" class="trend-btn">Saiba mais</a>
+                    <h3>Cybersecurity<area shape="" coords="" href="" alt=""></h3>
+                    <p>É a prática de proteger sistemas, redes, programas e dados contra ataques digitais, danos ou acesso não autorizado. </p>
+                    <a href="./pages/cybersecurity.html" class="trend-btn">Saiba mais</a>
                 </div>
             </div>
-        </section>
+        </section> 
     </main>
 
 
-    <!-- Modal do Formulário -->
-<div class="overlay" id="overlay"></div>
+        <!-- Modal do Formulário -->
+    <div class="overlay" id="overlay"></div>
 
-<div class="modal" id="contactModal">
-  
-    <button id="closeModalBtn" onclick="closeContactForm()">X</button>
-    <h2>Entre em Contato</h2>
-    <form>
-        <input type="text" placeholder="Nome" required>
-        <input type="text" placeholder="Sobrenome" required>
-        <input type="email" placeholder="Seu email" required>
-        <textarea placeholder="Sua mensagem" rows="5"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</div>
+    <div class="modal" id="contactModal">
+    
+        <button id="closeModalBtn" onclick="closeContactForm()">X</button>
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="text" placeholder="Sobrenome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" rows="5"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
     <!-- seção rodapé da página-->
     <footer>
@@ -147,7 +159,6 @@
     </footer>
 
     <script src="js/modal.js"></script>
-    <script src= "js/cards.js"></script>
 </body>
 
 </html>
