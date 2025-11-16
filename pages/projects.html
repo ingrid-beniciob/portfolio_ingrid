@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrid Benicio | Projetos</title>
+    <link rel="icon" href="../assets/images/icon coração.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <table>
+                <tr>
+                    <td><a href="../index.html">Sobre mim</a></td>
+                    <td><a href="../pages/certifications.html">Certificados</a></td>
+                    <td><a href="../pages/projects.html">Projetos</a></td>
+                    <td><a href="../pages/events.html">Eventos</a></td>
+                    <td><button id="openModalBtn" onclick="openContactForm()">Contato</button></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projetos">
+            <div class="projetos-header">
+                <h1>Meus Projetos</h1>
+                <p>Conheça alguns dos projetos que desenvolvi durante minha jornada na tecnologia</p>
+            </div>
+
+            <div class="projetos-grid">
+                <!-- Projeto 1 -->
+                <div class="projeto-card">
+                    <div class="projeto-imagem">
+                        <img src="../assets/images/project_lojaroupa.png" alt="Sistema de Loja de Roupa">
+                    </div>
+                    <div class="projeto-conteudo">
+                        <h3>Sistema de Loja de Roupa</h3>
+                        <p class="projeto-descricao">
+                            Desenvolvimento de um sistema completo para de uma loja de roupas.
+                            Um sistema integrado de gestão para lojas de vestuário, construído em Java como meu primeiro
+                            contato significativo com desenvolvimento de software. Esta solução incorpora interface e
+                            funcionalidades estratégicas essenciais para qualquer loja!
+                        </p>
+                        <div class="projeto-tech">
+                            <span>Java</span>
+                        </div>
+                        <a href="../assets/documents/Sistema_LojadeRoupa_Finalizado.zip" class="download-btn" download>
+                            Baixar Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="projeto-card">
+                    <div class="projeto-imagem">
+                        <img src="../assets/images/project_autocharm.png" alt="Sistema de Mecânica Automotiva">
+                    </div>
+                    <div class="projeto-conteudo">
+                        <h3>Sistema de Mecânica Automotiva</h3>
+                        <p class="projeto-descricao">
+                            Um sistema completo de gestão para oficinas automotivas em Python, que opera diretamente no
+                            terminal enquanto finalizo a interface gráfica. Esta ferramenta robusta já entrega controle
+                            total sobre o fluxo de veículos, serviços e clientes.
+                        </p>
+                        <div class="projeto-tech">
+                            <span>Python</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="../assets/documents/Sistema AutoCharm.zip" class="download-btn" download>
+                            Baixar Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="projeto-card">
+                    <div class="projeto-imagem">
+                        <img src="../assets/images/projeto3.jpg" alt="Ecommerce Loja de vestido">
+                    </div>
+                    <div class="projeto-conteudo">
+                        <h3>Ecommerce Loja de Vestidos</h3>
+                        <p class="projeto-descricao">
+                            ma plataforma de e-commerce sofisticada para boutiques de vestidos, onde cada funcionalidade
+                            foi cuidadosamente elaborada para proporcionar uma jornada de compra única e verdadeiramente
+                            excepcional.
+                        </p>
+                        <div class="projeto-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="../assets/documents/" class="download-btn" download>
+                            Baixar Projeto
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projetos-cta">
+                <h3>Interessado em colaborar?</h3>
+                <p>Vamos criar algo incrível juntos! Entre em contato para discutir ideias e projetos.</p>
+                <a href="#" class="cta-button" onclick="openContactForm()">Entrar em Contato</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal do Formulário -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="modal" id="contactModal">
+        <button id="closeModalBtn" onclick="closeContactForm()">X</button>
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="text" placeholder="Sobrenome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" rows="5"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <div class="rodape-info">
+                <h3>Ingrid Benicio</h3>
+                <p>Estudante de tecnologia e aspirante a desenvolvedora full-stack, usando a tecnologia para transformar
+                    o mundo.</p>
+            </div>
+
+            <div class="rodape-links">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Sobre mim</a></li>
+                    <li><a href="../pages/certifications.html">Certificados</a></li>
+                    <li><a href="../pages/projects.html">Projetos</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape-social">
+                <h4>Conectar</h4>
+                <div class="social-icons">
+                    <span>☐</span>
+                    <span>☐</span>
+                    <span>✅</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape-bottom">
+            <p>&copy; 2025 Ingrid Benicio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/modal.js"></script>
+</body>
+
+</html>

@@ -2,44 +2,64 @@
 
 /* Remove todas as margens e preenchimentos padrão dos elementos */
 * {
-    margin: 0;          /* Margem zero */
-    padding: 0;         /* Preenchimento zero */
-    box-sizing: border-box; /* Inclui borda e preenchimento no cálculo da largura/altura */
+    margin: 0;
+    /* Margem zero */
+    padding: 0;
+    /* Preenchimento zero */
+    box-sizing: border-box;
+    /* Inclui borda e preenchimento no cálculo da largura/altura */
 }
 
 /* Estiliza o corpo da página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte */
-    line-height: 1.9;   /* Altura da linha para melhor legibilidade */
-    color: #000000;        /* Cor do texto (cinza escuro) */
-    background-color: #ffffff; /* Cor de fundo (branco) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Define a fonte */
+    line-height: 1.9;
+    /* Altura da linha para melhor legibilidade */
+    color: #000000;
+    /* Cor do texto (cinza escuro) */
+    background-color: #ffffff;
+    /* Cor de fundo (branco) */
 }
 
 /* ===== HEADER E NAVEGAÇÃO ===== */
 
 /* Estiliza o cabeçalho */
 header {
-    background: #ffc9e1; /*fundo*/
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave embaixo */
-    position: fixed;    /* Fixa o header no topo da tela */
-    width: 100%;        /* Largura total da tela */
-    top: 0;             /* Cola no topo */
-    z-index: 1000;      /* Garante que fique acima de outros elementos */
+    background: #ffc9e1;
+    /*fundo*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave embaixo */
+    position: fixed;
+    /* Fixa o header no topo da tela */
+    width: 100%;
+    /* Largura total da tela */
+    top: 0;
+    /* Cola no topo */
+    z-index: 1000;
+    /* Garante que fique acima de outros elementos */
 }
 
 /* Estiliza a tabela de navegação */
 nav table {
-    width: 100%;        /* Largura total */
-    border-collapse: collapse; /* Remove espaços entre bordas das células */
+    width: 100%;
+    /* Largura total */
+    border-collapse: collapse;
+    /* Remove espaços entre bordas das células */
 }
 
 /* Estiliza a linha da tabela */
 nav tr {
-    display: flex;              /* Usa flexbox para layout */
-    justify-content: center;    /* Centraliza os itens */
-    align-items: center;        /* Centraliza verticalmente */
-    padding: 1rem 2rem;     /* Espaçamento interno (16px top/bottom, 32px left/right) */
-    position: relative;         /* Para posicionar o botão contato */
+    display: flex;
+    /* Usa flexbox para layout */
+    justify-content: center;
+    /* Centraliza os itens */
+    align-items: center;
+    /* Centraliza verticalmente */
+    padding: 1rem 2rem;
+    /* Espaçamento interno (16px top/bottom, 32px left/right) */
+    position: relative;
+    /* Para posicionar o botão contato */
     gap: 4rem;
 }
 
@@ -56,42 +76,60 @@ nav td:last-child {
 
 /* Última célula (botão contato) fica à direita */
 nav td:last-child {
-    flex: 0;            /* Não ocupa espaço igual */
-    position: absolute;  /* Posiciona absolutamente */
-    right: 2rem;        /* 32px da direita */
+    flex: 0;
+    /* Não ocupa espaço igual */
+    position: absolute;
+    /* Posiciona absolutamente */
+    right: 2rem;
+    /* 32px da direita */
 }
 
 /* Estiliza os links de navegação */
 nav a {
-    text-decoration: none;      /* Remove sublinhado */
-    color: #000000;                /* Cor do texto */
-    font-weight: 500;           /* Peso da fonte (semi-negrito) */
-    transition: color 0.3s ease; /* Transição suave de cor em 0.3 segundos */
-    padding: 0.5rem 1rem;       /* Espaçamento interno dos links */
+    text-decoration: none;
+    /* Remove sublinhado */
+    color: #000000;
+    /* Cor do texto */
+    font-weight: 500;
+    /* Peso da fonte (semi-negrito) */
+    transition: color 0.3s ease;
+    /* Transição suave de cor em 0.3 segundos */
+    padding: 0.5rem 1rem;
+    /* Espaçamento interno dos links */
 }
 
 
 /* Efeito quando passa o mouse sobre os links */
 nav a:hover {
-    color: #b7095d    /* cor*/
+    color: #b7095d
+        /* cor*/
 }
 
 /* Estiliza o botão de contato */
 #openModalBtn {
-    background: transparent;  /* Fundo transparente */
-    color: rgb(0, 0, 0);        /* cor texto */
-    border:6;   /* deixa com borda*/
-    padding: 0.75rem 1.5rem; /* Espaçamento interno */
-    border-radius:10px;  /* Bordas arredondadas */
-    cursor: pointer;     /* Muda cursor para mãozinha */
-    font-weight: 550;    /* Peso da fonte */
-    transition: background 0.3s ease; /* Transição suave do fundo */
+    background: transparent;
+    /* Fundo transparente */
+    color: rgb(0, 0, 0);
+    /* cor texto */
+    border: 6;
+    /* deixa com borda*/
+    padding: 0.75rem 1.5rem;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Muda cursor para mãozinha */
+    font-weight: 550;
+    /* Peso da fonte */
+    transition: background 0.3s ease;
+    /* Transição suave do fundo */
 }
 
 /* Efeito hover no botão */
 #openModalBtn:hover {
     border: #202122;
-    background: #202122;   /* Fundo branco */
+    background: #202122;
+    /* Fundo branco */
     color: #d393b2
 }
 
@@ -99,79 +137,119 @@ nav a:hover {
 
 /* Estiliza a seção hero (banner principal) */
 #hero {
-    padding: 4rem 2rem; /* Espaçamento interno: 6rem em cima/baixo, 2rem nas laterais */
-    background: linear-gradient(135deg, #ffc9e1 0%, #180221 100%); /* Gradiente rosa para roxo escuro */
-    color: rgb(0, 0, 0); /* Cor do texto preto */
-    min-height: 80vh; /* Altura mínima de 80% da altura da tela */
-    display: flex; /* Usa flexbox para layout */
-    align-items: center; /* Centraliza verticalmente o conteúdo */
+    padding: 4rem 2rem;
+    /* Espaçamento interno: 6rem em cima/baixo, 2rem nas laterais */
+    background: linear-gradient(135deg, #ffc9e1 0%, #180221 100%);
+    /* Gradiente rosa para roxo escuro */
+    color: rgb(0, 0, 0);
+    /* Cor do texto preto */
+    min-height: 80vh;
+    /* Altura mínima de 80% da altura da tela */
+    display: flex;
+    /* Usa flexbox para layout */
+    align-items: center;
+    /* Centraliza verticalmente o conteúdo */
 }
 
 /* Container do conteúdo da hero section */
 .hero-content {
-    max-width: 1400px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o container na página */
-    display: grid; /* Usa CSS Grid para layout */
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
-    gap: 4rem; /* Espaço de 4rem entre as colunas */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
+    max-width: 1400px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o container na página */
+    display: grid;
+    /* Usa CSS Grid para layout */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas de tamanho igual */
+    gap: 4rem;
+    /* Espaço de 4rem entre as colunas */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
 }
 
 /* Estiliza a parte de texto da hero */
 .hero-text h1 {
-    font-size: 3rem; /* Tamanho grande para o título */
-    margin-bottom: 1rem; /* Espaço abaixo do título */
-    font-weight: 700; /* Peso da fonte em negrito */
-    white-space: nowrap; /*Não deixa quebra de linha*/
+    font-size: 3rem;
+    /* Tamanho grande para o título */
+    margin-bottom: 1rem;
+    /* Espaço abaixo do título */
+    font-weight: 700;
+    /* Peso da fonte em negrito */
+    white-space: nowrap;
+    /*Não deixa quebra de linha*/
 }
 
 /* Estiliza os parágrafos do texto */
 .hero-text p {
-    font-size: 1.3rem; /* Tamanho médio para os parágrafos */
-    margin-bottom: 1.5rem; /* Espaço abaixo dos parágrafos */
-    opacity: 0.9; /* Leve transparência no texto */
+    font-size: 1.3rem;
+    /* Tamanho médio para os parágrafos */
+    margin-bottom: 1.5rem;
+    /* Espaço abaixo dos parágrafos */
+    opacity: 0.9;
+    /* Leve transparência no texto */
 }
 
 /* Estiliza especificamente o último parágrafo */
 #hero p:last-of-type {
-    font-size: 1.2rem;   /* Tamanho um pouco menor */
-    margin-bottom: 2rem; /* Mais espaço abaixo */
-    font-style: italic;  /* Texto em itálico */
+    font-size: 1.2rem;
+    /* Tamanho um pouco menor */
+    margin-bottom: 2rem;
+    /* Mais espaço abaixo */
+    font-style: italic;
+    /* Texto em itálico */
 }
 
 /* Container da imagem na hero */
 .hero-image {
-    text-align: center; /* Centraliza a imagem horizontalmente */
+    text-align: center;
+    /* Centraliza a imagem horizontalmente */
 }
 
 /* Estiliza a imagem propriamente dita */
 .hero-image img {
-    width: 400px; /* Largura fixa de 300px */
-    height: 400px; /* Altura fixa de 300px */
-    border-radius: 50%; /* Torna a imagem circular */
-    object-fit: cover; /* Ajusta a imagem para preencher o círculo sem distorcer */
-    border: 5px solid rgba(255, 255, 255, 0.2); /* Borda branca semi-transparente */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Sombra pronunciada ao redor */
+    width: 400px;
+    /* Largura fixa de 300px */
+    height: 400px;
+    /* Altura fixa de 300px */
+    border-radius: 50%;
+    /* Torna a imagem circular */
+    object-fit: cover;
+    /* Ajusta a imagem para preencher o círculo sem distorcer */
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    /* Borda branca semi-transparente */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    /* Sombra pronunciada ao redor */
 }
 
 /* Estiliza o link/botão da hero */
 #hero a {
-    display: inline-block;    /* Permite definir largura/altura */
-    background: transparent;  /* Fundo transparente */
-    color: white;            /* Texto branco */
-    border: 2px solid white; /* Borda branca */
-    padding: 0.75rem 2rem;   /* Espaçamento interno */
-    border-radius:9px;      /* Bordas arredondadas */
-    text-decoration: none;   /* Remove sublinhado */
-    font-weight: 500;        /* Peso da fonte */
-    transition: all 0.3s ease; /* Transição suave de todas as propriedades */
+    display: inline-block;
+    /* Permite definir largura/altura */
+    background: transparent;
+    /* Fundo transparente */
+    color: white;
+    /* Texto branco */
+    border: 2px solid white;
+    /* Borda branca */
+    padding: 0.75rem 2rem;
+    /* Espaçamento interno */
+    border-radius: 9px;
+    /* Bordas arredondadas */
+    text-decoration: none;
+    /* Remove sublinhado */
+    font-weight: 500;
+    /* Peso da fonte */
+    transition: all 0.3s ease;
+    /* Transição suave de todas as propriedades */
 }
 
 /* Efeito hover no botão */
 #hero a:hover {
     border: #202122;
-    background:#202122;   /* Fundo */
-    color: #d393b2;     /* Cor texto */
+    background: #202122;
+    /* Fundo */
+    color: #d393b2;
+    /* Cor texto */
 }
 
 /* ===== ANIMAÇÕES ===== */
@@ -200,6 +278,7 @@ nav a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -207,9 +286,12 @@ nav a:hover {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -222,11 +304,11 @@ nav a:hover {
         text-align: center;
         gap: 2rem;
     }
-    
+
     .hero-text h1 {
         font-size: 2.2rem;
     }
-    
+
     .hero-image img {
         width: 250px;
         height: 250px;
@@ -237,184 +319,274 @@ nav a:hover {
 
 /* Estiliza a seção sobre */
 #about {
-    padding: 4rem 2rem;  /* Espaçamento interno */
-    max-width: 1200px;   /* Largura máxima */
-    margin: 0 auto;      /* Centraliza na página */
+    padding: 4rem 2rem;
+    /* Espaçamento interno */
+    max-width: 1200px;
+    /* Largura máxima */
+    margin: 0 auto;
+    /* Centraliza na página */
 }
 
 /* Estiliza o título da seção */
 #about h2 {
-    font-size: 2.5rem;   /* Tamanho grande */
-    margin-bottom: 2rem; /* Espaço abaixo */
-    text-align: center;  /* Centraliza texto */
-    color: #333;         /* Cor do texto */
+    font-size: 2.5rem;
+    /* Tamanho grande */
+    margin-bottom: 2rem;
+    /* Espaço abaixo */
+    text-align: center;
+    /* Centraliza texto */
+    color: #333;
+    /* Cor do texto */
 }
 
 /* Estiliza o parágrafo sobre */
 #about p {
-    font-size: 1.1rem;   /* Tamanho da fonte */
-    text-align: center;  /* Texto centralizado */
-    max-width: 800px;    /* Largura máxima do texto */
-    margin: 0 auto;      /* Centraliza */
-    line-height: 1.8;    /* Altura da linha para legibilidade */
+    font-size: 1.1rem;
+    /* Tamanho da fonte */
+    text-align: center;
+    /* Texto centralizado */
+    max-width: 800px;
+    /* Largura máxima do texto */
+    margin: 0 auto;
+    /* Centraliza */
+    line-height: 1.8;
+    /* Altura da linha para legibilidade */
 }
 
 /* Linha divisória */
 hr {
-    border: none;        /* Remove borda padrão */
-    height: 1px;         /* Altura da linha */
-    background: #e0e0e0; /* Cor cinza clara */
-    margin: 3rem auto;   /* Espaço acima/abaixo e centraliza */
-    width: 80%;          /* Largura de 80% do container */
+    border: none;
+    /* Remove borda padrão */
+    height: 1px;
+    /* Altura da linha */
+    background: #e0e0e0;
+    /* Cor cinza clara */
+    margin: 3rem auto;
+    /* Espaço acima/abaixo e centraliza */
+    width: 80%;
+    /* Largura de 80% do container */
 }
 
 /* ===== SEÇÃO DE HABILIDADES ===== */
 
 /* Container grid para os cards de habilidades */
 .skills-grid {
-    display: grid;                                  /* Usa CSS Grid */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
-    gap: 2rem;                                      /* Espaço entre os cards */
-    margin-top: 3rem;                               /* Espaço acima */
+    display: grid;
+    /* Usa CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Colunas responsivas */
+    gap: 2rem;
+    /* Espaço entre os cards */
+    margin-top: 3rem;
+    /* Espaço acima */
     margin-left: 5rem;
     margin-right: 5rem;
 }
 
 /* Estiliza cada card de habilidade */
 .skill-card {
-    background: #ffc9e1;    /* Fundo  */
-    padding: 2rem;          /* Espaçamento interno */
-    border-radius: 10px;    /* Bordas arredondadas */
-    text-align: center;     /* Texto centralizado */
-    transition: transform 0.3s ease; /* Transição suave para transform */
+    background: #ffc9e1;
+    /* Fundo  */
+    padding: 2rem;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Texto centralizado */
+    transition: transform 0.3s ease;
+    /* Transição suave para transform */
 }
 
 /* Efeito hover nos cards */
 .skill-card:hover {
-    transform: translateY(-5px); /* Move o card 5px para cima */
+    transform: translateY(-5px);
+    /* Move o card 5px para cima */
 }
 
 /* Título dentro do card */
 .skill-card h3 {
-    color: #000000;     /* Cor */
-    margin-bottom: 1rem; /* Espaço abaixo */
-    font-size: 1.3rem;  /* Tamanho da fonte */
+    color: #000000;
+    /* Cor */
+    margin-bottom: 1rem;
+    /* Espaço abaixo */
+    font-size: 1.3rem;
+    /* Tamanho da fonte */
 }
 
 /* === SEÇÃO TENDÊNCIAS === */
 
 /* Estilo da seção principal */
 #trends {
-    background-color: #a5728d; /* Cor de fundo rosa */
-    padding: 60px 20px; /* Espaçamento interno */
-    text-align: center; /* Alinha texto ao centro */
-    margin-top: 30px; /* Adiciona 15px de margem acima */
-    margin-bottom: 0; /* Remove margem abaixo - encosta no rodapé */
+    background-color: #a5728d;
+    /* Cor de fundo rosa */
+    padding: 60px 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinha texto ao centro */
+    margin-top: 30px;
+    /* Adiciona 15px de margem acima */
+    margin-bottom: 0;
+    /* Remove margem abaixo - encosta no rodapé */
 }
 
 /* Estilo do título principal */
 #trends h2 {
-    color: #000000; /* Cor do texto branca */
-    font-size: 2.5rem; /* Tamanho da fonte */
-    margin-bottom: 15px; /* Espaço abaixo */
-    font-weight: 700; /* Peso da fonte negrito */
+    color: #000000;
+    /* Cor do texto branca */
+    font-size: 2.5rem;
+    /* Tamanho da fonte */
+    margin-bottom: 15px;
+    /* Espaço abaixo */
+    font-weight: 700;
+    /* Peso da fonte negrito */
 }
 
 /* Estilo do parágrafo descritivo */
-#trends > p {
-    color: #000000; /* Cor do texto branca */
-    font-size: 1.1rem; /* Tamanho da fonte */
-    margin-bottom: 40px; /* Espaço abaixo */
-    opacity: 0.9; /* Transparência leve */
-    max-width: 600px; /* Largura máxima */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
+#trends>p {
+    color: #000000;
+    /* Cor do texto branca */
+    font-size: 1.1rem;
+    /* Tamanho da fonte */
+    margin-bottom: 40px;
+    /* Espaço abaixo */
+    opacity: 0.9;
+    /* Transparência leve */
+    max-width: 600px;
+    /* Largura máxima */
+    margin-left: auto;
+    /* Centraliza horizontalmente */
+    margin-right: auto;
+    /* Centraliza horizontalmente */
 }
 
 /* Container que envolve todos os cards */
 .trends-cards {
-    display: grid; /* Usa layout grid */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colunas responsivas */
-    gap: 30px; /* Espaço entre os cards */
-    max-width: 1200px; /* Largura máxima do container */
-    margin: 0 auto; /* Centraliza o container */
-    padding: 0 20px; /* Espaçamento lateral */
+    display: grid;
+    /* Usa layout grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Colunas responsivas */
+    gap: 30px;
+    /* Espaço entre os cards */
+    max-width: 1200px;
+    /* Largura máxima do container */
+    margin: 0 auto;
+    /* Centraliza o container */
+    padding: 0 20px;
+    /* Espaçamento lateral */
 }
 
 /* Estilo de cada card individual */
 .trend-card {
-    background: white; /* Fundo branco */
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 30px 25px; /* Espaçamento interno */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
-    display: flex; /* Usa flexbox */
-    flex-direction: column; /* Organiza em coluna */
-    height: 100%; /* Altura completa */
+    background: white;
+    /* Fundo branco */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    padding: 30px 25px;
+    /* Espaçamento interno */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transições suaves */
+    display: flex;
+    /* Usa flexbox */
+    flex-direction: column;
+    /* Organiza em coluna */
+    height: 100%;
+    /* Altura completa */
 }
 
 /* Efeito quando passa o mouse sobre o card */
 .trend-card:hover {
-    transform: translateY(-5px); /* Move o card para cima */
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
+    transform: translateY(-5px);
+    /* Move o card para cima */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    /* Aumenta a sombra */
 }
 
 /* Estilo do título dentro do card */
 .trend-card h3 {
-    color: #333; /* Cor do texto cinza escuro */
-    font-size: 1.4rem; /* Tamanho da fonte */
-    margin-bottom: 15px; /* Espaço abaixo */
-    font-weight: 600; /* Peso da fonte semi-negrito */
+    color: #333;
+    /* Cor do texto cinza escuro */
+    font-size: 1.4rem;
+    /* Tamanho da fonte */
+    margin-bottom: 15px;
+    /* Espaço abaixo */
+    font-weight: 600;
+    /* Peso da fonte semi-negrito */
 }
 
 /* Estilo do texto dentro do card */
 .trend-card p {
-    color: #666; /* Cor do texto cinza */
-    line-height: 1.6; /* Altura da linha */
-    margin-bottom: 25px; /* Espaço abaixo */
-    flex-grow: 1; /* Ocupa espaço disponível */
+    color: #666;
+    /* Cor do texto cinza */
+    line-height: 1.6;
+    /* Altura da linha */
+    margin-bottom: 25px;
+    /* Espaço abaixo */
+    flex-grow: 1;
+    /* Ocupa espaço disponível */
 }
 
 /* Estilo do botão */
 .trend-btn {
-    display: inline-block; /* Display inline-block */
-    background-color: #ffc9e1; /* Cor de fundo rosa claro */
-    color: rgb(0, 0, 0); /* Cor do texto preta */
-    padding: 12px 30px; /* Espaçamento interno */
-    border-radius: 25px; /* Bordas completamente arredondadas */
-    text-decoration: none; /* Remove sublinhado */
-    font-weight: 600; /* Peso da fonte negrito */
-    transition: all 0.3s ease; /* Transição suave */
-    border: 2px solid #ffc9e1; /* Borda com mesma cor do fundo */
-    margin-top: auto; /* Empurra para baixo no flex container */
+    display: inline-block;
+    /* Display inline-block */
+    background-color: #ffc9e1;
+    /* Cor de fundo rosa claro */
+    color: rgb(0, 0, 0);
+    /* Cor do texto preta */
+    padding: 12px 30px;
+    /* Espaçamento interno */
+    border-radius: 25px;
+    /* Bordas completamente arredondadas */
+    text-decoration: none;
+    /* Remove sublinhado */
+    font-weight: 600;
+    /* Peso da fonte negrito */
+    transition: all 0.3s ease;
+    /* Transição suave */
+    border: 2px solid #ffc9e1;
+    /* Borda com mesma cor do fundo */
+    margin-top: auto;
+    /* Empurra para baixo no flex container */
 }
 
 /* Efeito quando passa o mouse sobre o botão */
 .trend-btn:hover {
-    background-color: #000000; /* Fundo preto */
-    color: #d393b2; /* Texto rosa escuro */
-    border-color: #000000; /* Borda preta */
+    background-color: #000000;
+    /* Fundo preto */
+    color: #d393b2;
+    /* Texto rosa escuro */
+    border-color: #000000;
+    /* Borda preta */
 }
 
 /* Estilos para telas menores (tablets e celulares) */
 @media (max-width: 768px) {
     #trends {
-        padding: 40px 15px; /* Reduz espaçamento */
-        margin-top: 15px; /* Mantém margem superior */
-        margin-bottom: 0; /* Mantém sem margem inferior */
+        padding: 40px 15px;
+        /* Reduz espaçamento */
+        margin-top: 15px;
+        /* Mantém margem superior */
+        margin-bottom: 0;
+        /* Mantém sem margem inferior */
     }
-    
+
     #trends h2 {
-        font-size: 2rem; /* Reduz tamanho da fonte */
+        font-size: 2rem;
+        /* Reduz tamanho da fonte */
     }
-    
+
     .trends-cards {
-        grid-template-columns: 1fr; /* Uma coluna apenas */
-        gap: 20px; /* Reduz espaço entre cards */
+        grid-template-columns: 1fr;
+        /* Uma coluna apenas */
+        gap: 20px;
+        /* Reduz espaço entre cards */
     }
-    
+
     .trend-card {
-        padding: 25px 20px; /* Reduz espaçamento interno */
+        padding: 25px 20px;
+        /* Reduz espaçamento interno */
     }
 }
 
@@ -422,162 +594,242 @@ hr {
 
 /* Estiliza o modal (janela flutuante) */
 .modal {
-    display: none;          /* Começa invisível */
-    position: fixed;        /* Posição fixa na tela */
-    top: 50%;               /* Começa no meio vertical */
-    left: 50%;              /* Começa no meio horizontal */
-    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
-    background: white;      /* Fundo branco */
-    padding: 2rem;          /* Espaçamento interno */
-    border-radius: 10px;    /* Bordas arredondadas */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra pronunciada */
-    z-index: 1001;          /* Fica acima do overlay */
-    min-width: 400px;       /* Largura mínima */
-    max-width: 90%;         /* Largura máxima responsiva */
+    display: none;
+    /* Começa invisível */
+    position: fixed;
+    /* Posição fixa na tela */
+    top: 50%;
+    /* Começa no meio vertical */
+    left: 50%;
+    /* Começa no meio horizontal */
+    transform: translate(-50%, -50%);
+    /* Centraliza perfeitamente */
+    background: white;
+    /* Fundo branco */
+    padding: 2rem;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Sombra pronunciada */
+    z-index: 1001;
+    /* Fica acima do overlay */
+    min-width: 400px;
+    /* Largura mínima */
+    max-width: 90%;
+    /* Largura máxima responsiva */
 }
 
 /* Fundo escuro atrás do modal */
 .overlay {
-    display: none;          /* Começa invisível */
-    position: fixed;        /* Posição fixa */
-    top: 0;                 /* Começa no topo */
-    left: 0;                /* Começa na esquerda */
-    width: 100%;            /* Largura total da tela */
-    height: 100%;           /* Altura total da tela */
-    background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
-    z-index: 1000;          /* Fica acima do conteúdo mas abaixo do modal */
+    display: none;
+    /* Começa invisível */
+    position: fixed;
+    /* Posição fixa */
+    top: 0;
+    /* Começa no topo */
+    left: 0;
+    /* Começa na esquerda */
+    width: 100%;
+    /* Largura total da tela */
+    height: 100%;
+    /* Altura total da tela */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo preto semi-transparente */
+    z-index: 1000;
+    /* Fica acima do conteúdo mas abaixo do modal */
 }
 
 /* Botão de fechar do modal */
 #closeModalBtn {
-    position: absolute;     /* Posição absoluta dentro do modal */
-    top: 15px;              /* 15px do topo */
-    right: 15px;            /* 15px da direita */
-    background: none;       /* Sem fundo */
-    border: none;           /* Sem borda */
-    font-size: 1.2rem;      /* Tamanho da fonte */
-    cursor: pointer;        /* Cursor de mãozinha */
-    color: #666;            /* Cor cinza */
+    position: absolute;
+    /* Posição absoluta dentro do modal */
+    top: 15px;
+    /* 15px do topo */
+    right: 15px;
+    /* 15px da direita */
+    background: none;
+    /* Sem fundo */
+    border: none;
+    /* Sem borda */
+    font-size: 1.2rem;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Cursor de mãozinha */
+    color: #666;
+    /* Cor cinza */
 }
 
 /* Efeito hover no botão fechar */
 #closeModalBtn:hover {
-    color: #333;            /* Cor mais escura */
+    color: #333;
+    /* Cor mais escura */
 }
 
 /* Título do modal */
 .modal h2 {
-    margin-bottom: 1.5rem;  /* Espaço abaixo */
-    color: #333;            /* Cor do texto */
+    margin-bottom: 1.5rem;
+    /* Espaço abaixo */
+    color: #333;
+    /* Cor do texto */
 }
 
 /* Formulário dentro do modal */
 .modal form {
-    display: flex;          /* Usa flexbox */
-    flex-direction: column; /* Organiza em coluna */
-    gap: 1rem;              /* Espaço entre os elementos */
+    display: flex;
+    /* Usa flexbox */
+    flex-direction: column;
+    /* Organiza em coluna */
+    gap: 1rem;
+    /* Espaço entre os elementos */
 }
 
 /* Campos de input e textarea */
 .modal input,
 .modal textarea {
-    padding: 0.75rem;       /* Espaçamento interno */
-    border: 1px solid #ddd; /* Borda cinza clara */
-    border-radius: 5px;     /* Bordas levemente arredondadas */
-    font-size: 1rem;        /* Tamanho da fonte */
+    padding: 0.75rem;
+    /* Espaçamento interno */
+    border: 1px solid #ddd;
+    /* Borda cinza clara */
+    border-radius: 5px;
+    /* Bordas levemente arredondadas */
+    font-size: 1rem;
+    /* Tamanho da fonte */
 }
 
 /* Botão de enviar do formulário */
 .modal button[type="submit"] {
-    background: #ffc9e1;  /*fundo*/
-    color:  #000000;      /* cor do texto*/
-    border: none;           /* Remove borda */
-    padding: 0.75rem;       /* Espaçamento interno */
-    border-radius: 8px;     /* Bordas arredondadas */
-    cursor: pointer;        /* Cursor de mãozinha */
-    font-weight: 500;       /* Peso da fonte */
+    background: #ffc9e1;
+    /*fundo*/
+    color: #000000;
+    /* cor do texto*/
+    border: none;
+    /* Remove borda */
+    padding: 0.75rem;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor de mãozinha */
+    font-weight: 500;
+    /* Peso da fonte */
 }
 
 /* Efeito hover no botão enviar */
 .modal button[type="submit"]:hover {
-    background: rgb(0, 0, 0);   /* Fundo ao passar o mouse */
-    color: #d393b2;     /* Cor */
+    background: rgb(0, 0, 0);
+    /* Fundo ao passar o mouse */
+    color: #d393b2;
+    /* Cor */
 }
 
 /* ===== FOOTER ===== */
 
 /* Estiliza o rodapé */
 footer {
-    background: #202122;    /* Fundo cinza muito claro */
-    padding: 3rem 2rem 1rem; /* Espaçamento interno */
-    margin-top: 0rem;       /* Espaço acima */
+    background: #202122;
+    /* Fundo cinza muito claro */
+    padding: 3rem 2rem 1rem;
+    /* Espaçamento interno */
+    margin-top: 0rem;
+    /* Espaço acima */
 }
 
 /* Container principal do rodapé */
 .rodape {
-    display: grid;                          /* Usa CSS Grid */
-    grid-template-columns: 2fr 1fr 1fr;    /* 3 colunas (a primeira é maior) */
-    gap: 2rem;                              /* Espaço entre colunas */
-    max-width: 1200px;                      /* Largura máxima */
-    margin: 0 auto;                         /* Centraliza */
+    display: grid;
+    /* Usa CSS Grid */
+    grid-template-columns: 2fr 1fr 1fr;
+    /* 3 colunas (a primeira é maior) */
+    gap: 2rem;
+    /* Espaço entre colunas */
+    max-width: 1200px;
+    /* Largura máxima */
+    margin: 0 auto;
+    /* Centraliza */
 }
 
 /* Título no rodapé */
 .rodape-info h3 {
-    color:  #ffc9e1;    /* Cor azul */
-    margin-bottom: 1rem; /* Espaço abaixo */
+    color: #ffc9e1;
+    /* Cor azul */
+    margin-bottom: 1rem;
+    /* Espaço abaixo */
 }
 
 /* Títulos das seções do rodapé */
 .rodape-links h4,
 .rodape-social h4 {
-    margin-bottom: 1rem; /* Espaço abaixo */
-    color:  #ffc9e1         /* Cor do texto */
+    margin-bottom: 1rem;
+    /* Espaço abaixo */
+    color: #ffc9e1
+        /* Cor do texto */
 }
 
 /* Lista de links */
 .rodape-links ul {
-    list-style: none;    /* Remove marcadores da lista */
+    list-style: none;
+    /* Remove marcadores da lista */
 }
 
 /* Itens da lista */
 .rodape-links li {
-    margin-bottom: 0.5rem; /* Espaço entre itens */
+    margin-bottom: 0.5rem;
+    /* Espaço entre itens */
 }
 
 /* Links do rodapé */
 .rodape-links a {
-    text-decoration: none;      /* Remove sublinhado */
-    color: #fffcfc;                /* Cor cinza */
-    transition: color 0.3s ease; /* Transição suave de cor */
+    text-decoration: none;
+    /* Remove sublinhado */
+    color: #fffcfc;
+    /* Cor cinza */
+    transition: color 0.3s ease;
+    /* Transição suave de cor */
 }
 
 /* Efeito hover nos links */
 .rodape-links a:hover {
-    color: #b7095d;     /* Muda para azul */
+    color: #b7095d;
+    /* Muda para azul */
 }
 
 /* Ícones sociais */
 .social-icons span {
-    display: inline-block;      /* Permite definir tamanho */
-    width: 40px;               /* Largura fixa */
-    height: 40px;              /* Altura fixa */
-    background: #000000;          /* Fundo preto */
-    color: white;              /* Ícone branco */
-    text-align: center;        /* Centraliza ícone */
-    line-height: 40px;         /* Centraliza verticalmente */
-    border-radius: 50%;        /* Forma circular */
-    margin-right: 0.5rem;      /* Espaço entre ícones */
-    cursor: pointer;           /* Cursor de mãozinha */
+    display: inline-block;
+    /* Permite definir tamanho */
+    width: 40px;
+    /* Largura fixa */
+    height: 40px;
+    /* Altura fixa */
+    background: #000000;
+    /* Fundo preto */
+    color: white;
+    /* Ícone branco */
+    text-align: center;
+    /* Centraliza ícone */
+    line-height: 40px;
+    /* Centraliza verticalmente */
+    border-radius: 50%;
+    /* Forma circular */
+    margin-right: 0.5rem;
+    /* Espaço entre ícones */
+    cursor: pointer;
+    /* Cursor de mãozinha */
 }
 
 /* Parte inferior do rodapé */
 .rodape-bottom {
-    text-align: center;        /* Texto centralizado */
-    margin-top: 3rem;          /* Espaço acima */
-    padding-top: 1rem;         /* Espaço interno acima */
-    border-top: 1px solid  #ffc9e1; /* divisória */
-    color: #0b0b0b;               /* Cor cinza */
+    text-align: center;
+    /* Texto centralizado */
+    margin-top: 3rem;
+    /* Espaço acima */
+    padding-top: 1rem;
+    /* Espaço interno acima */
+    border-top: 1px solid #ffc9e1;
+    /* divisória */
+    color: #0b0b0b;
+    /* Cor cinza */
 }
 
 .rodape-bottom p {
@@ -588,355 +840,506 @@ footer {
 
 .rodape-info p {
     color: #ffffff;
-    
+
 }
 
 /* === PÁGINA EDGE COMPUTING === */
 
 /* Container principal da seção Edge Computing */
 #edge-computing {
-    padding: 40px 20px; /* Espaçamento interno: 40px topo/baixo, 20px laterais */
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o container na página */
+    padding: 40px 20px;
+    /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o container na página */
 }
 
 /* Cabeçalho da página */
 .edge-header {
-    text-align: center; /* Alinha o texto ao centro */
-    margin-bottom: 50px; /* Espaço abaixo do cabeçalho */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-bottom: 50px;
+    /* Espaço abaixo do cabeçalho */
 }
 
 /* Título principal */
 .edge-header h1 {
     margin-top: 2rem;
-    font-size: 3rem; /* Tamanho grande da fonte */
-    color: #333; /* Cor cinza escuro */
-    margin-bottom: 15px; /* Espaço abaixo do título */
+    font-size: 3rem;
+    /* Tamanho grande da fonte */
+    color: #333;
+    /* Cor cinza escuro */
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
 }
 
 /* Subtítulo/descrição */
 .edge-header p {
-    font-size: 1.3rem; /* Tamanho médio da fonte */
-    color: #666; /* Cor cinza médio */
+    font-size: 1.3rem;
+    /* Tamanho médio da fonte */
+    color: #666;
+    /* Cor cinza médio */
 }
 
 /* Layout do conteúdo principal - APENAS para a primeira seção */
 .edge-content {
-    display: grid; /* Usa CSS Grid para layout */
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
-    gap: 50px; /* Espaço entre as colunas */
-    align-items: start; /* Alinha os itens no topo */
-    margin-bottom: 50px; /* Espaço abaixo desta seção */
+    display: grid;
+    /* Usa CSS Grid para layout */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas de tamanho igual */
+    gap: 50px;
+    /* Espaço entre as colunas */
+    align-items: start;
+    /* Alinha os itens no topo */
+    margin-bottom: 50px;
+    /* Espaço abaixo desta seção */
 }
 
 /* Estilo da imagem */
 .edge-image img {
-    width: 100%; /* Imagem ocupa 100% do container */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+    width: 100%;
+    /* Imagem ocupa 100% do container */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 /* Títulos das seções de informação */
 .edge-info h2 {
-    color: #333; /* Cor cinza escuro */
-    font-size: 2rem; /* Tamanho grande da fonte */
-    margin-bottom: 20px; /* Espaço abaixo */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 2rem;
+    /* Tamanho grande da fonte */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
 /* Subtítulos coloridos */
 .edge-info h3 {
-    color: #ff69b4; /* Cor rosa */
-    font-size: 1.5rem; /* Tamanho médio da fonte */
-    margin: 30px 0 15px 0; /* Margem: 30px topo, 0 laterais, 15px baixo */
+    color: #ff69b4;
+    /* Cor rosa */
+    font-size: 1.5rem;
+    /* Tamanho médio da fonte */
+    margin: 30px 0 15px 0;
+    /* Margem: 30px topo, 0 laterais, 15px baixo */
 }
 
 /* Parágrafos de texto */
 .edge-info p {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
-    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    margin-bottom: 20px;
+    /* Espaço abaixo dos parágrafos */
 }
 
 /* Lista não ordenada */
 .edge-info ul {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.8; /* Altura da linha maior para listas */
-    margin-bottom: 20px; /* Espaço abaixo da lista */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.8;
+    /* Altura da linha maior para listas */
+    margin-bottom: 20px;
+    /* Espaço abaixo da lista */
 }
 
 /* Itens da lista */
 .edge-info li {
-    margin-bottom: 8px; /* Espaço entre os itens da lista */
+    margin-bottom: 8px;
+    /* Espaço entre os itens da lista */
 }
 
 /* ========== SEÇÃO DE APLICAÇÕES PRÁTICAS ========== */
 
 /* Container das aplicações práticas - LARGURA TOTAL */
 .applications-section {
-    width: 100%; /* Ocupa 100% da largura */
-    margin: 40px 0; /* Margem topo/baixo */
+    width: 100%;
+    /* Ocupa 100% da largura */
+    margin: 40px 0;
+    /* Margem topo/baixo */
 }
 
 /* Título da seção aplicações */
 .applications-section h2 {
-    color: #333; /* Cor cinza escuro */
-    font-size: 2rem; /* Tamanho grande */
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 30px; /* Espaço abaixo */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 2rem;
+    /* Tamanho grande */
+    text-align: center;
+    /* Centraliza o título */
+    margin-bottom: 30px;
+    /* Espaço abaixo */
 }
 
 /* Grid de aplicações */
 .applications {
-    display: grid; /* Usa CSS Grid */
-    grid-template-columns: 1fr 1fr; /* Duas colunas */
-    gap: 20px; /* Espaço entre os cards */
-    margin: 20px 0; /* Margem: 20px topo/baixo */
+    display: grid;
+    /* Usa CSS Grid */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas */
+    gap: 20px;
+    /* Espaço entre os cards */
+    margin: 20px 0;
+    /* Margem: 20px topo/baixo */
 }
 
 /* Cards individuais de aplicação */
 .app-card {
-    background: #ececec; /* Cor de fundo cinza muito claro */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas levemente arredondadas */
-    border-left: 4px solid #ff69b4; /* Borda lateral rosa */
+    background: #ececec;
+    /* Cor de fundo cinza muito claro */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas levemente arredondadas */
+    border-left: 4px solid #ff69b4;
+    /* Borda lateral rosa */
 }
 
 /* Título dos cards */
 .app-card h4 {
-    color: #333; /* Cor cinza escuro */
-    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #333;
+    /* Cor cinza escuro */
+    margin-bottom: 10px;
+    /* Espaço abaixo do título */
 }
 
 /* Texto dos cards */
 .app-card p {
-    color: #666; /* Cor cinza médio */
-    font-size: 0.9rem; /* Fonte um pouco menor */
-    margin: 0; /* Remove margens padrão */
+    color: #666;
+    /* Cor cinza médio */
+    font-size: 0.9rem;
+    /* Fonte um pouco menor */
+    margin: 0;
+    /* Remove margens padrão */
 }
 
 /* ========== SEÇÃO CTA ========== */
 
 /* Seção de call-to-action (chamada para ação) */
 .edge-cta {
-    background: #ff63b1; /* Fundo rosa */
-    padding: 30px; /* Espaçamento interno generoso */
-    border-radius: 15px; /* Bordas arredondadas */
-    text-align: center; /* Texto centralizado */
-    margin-top: 40px; /* Espaço acima da seção */
-    width: 100%; /* Ocupa largura total */
+    background: #ff63b1;
+    /* Fundo rosa */
+    padding: 30px;
+    /* Espaçamento interno generoso */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Texto centralizado */
+    margin-top: 40px;
+    /* Espaço acima da seção */
+    width: 100%;
+    /* Ocupa largura total */
 }
 
 /* Título do CTA */
 .edge-cta h3 {
-    color: white; /* Texto branco */
-    margin-bottom: 10px; /* Espaço abaixo */
+    color: white;
+    /* Texto branco */
+    margin-bottom: 10px;
+    /* Espaço abaixo */
 }
 
 /* Parágrafo do CTA */
 .edge-cta p {
-    color: white; /* Texto branco */
-    opacity: 0.9; /* Leve transparência */
-    margin-bottom: 20px; /* Espaço abaixo */
+    color: white;
+    /* Texto branco */
+    opacity: 0.9;
+    /* Leve transparência */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
 /* Botão principal */
 .cta-button {
-    display: inline-block; /* Display inline-block para aceitar padding */
-    background: white; /* Fundo branco */
-    color: #ff69b4; /* Texto rosa */
-    padding: 12px 30px; /* Espaçamento interno confortável */
-    border-radius: 25px; /* Bordas completamente arredondadas (pill) */
-    text-decoration: none; /* Remove sublinhado do link */
-    font-weight: 600; /* Texto em negrito */
-    margin: 0 10px; /* Margem lateral entre botões */
-    transition: all 0.3s ease; /* Transição suave para hover */
+    display: inline-block;
+    /* Display inline-block para aceitar padding */
+    background: white;
+    /* Fundo branco */
+    color: #ff69b4;
+    /* Texto rosa */
+    padding: 12px 30px;
+    /* Espaçamento interno confortável */
+    border-radius: 25px;
+    /* Bordas completamente arredondadas (pill) */
+    text-decoration: none;
+    /* Remove sublinhado do link */
+    font-weight: 600;
+    /* Texto em negrito */
+    margin: 0 10px;
+    /* Margem lateral entre botões */
+    transition: all 0.3s ease;
+    /* Transição suave para hover */
 }
 
 /* Botão secundário */
 .cta-button.secondary {
-    background: transparent; /* Fundo transparente */
-    color: white; /* Texto branco */
-    border: 2px solid white; /* Borda branca */
+    background: transparent;
+    /* Fundo transparente */
+    color: white;
+    /* Texto branco */
+    border: 2px solid white;
+    /* Borda branca */
 }
 
 /* Efeito hover nos botões */
 .cta-button:hover {
-    transform: translateY(-2px); /* Levanta o botão levemente */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra */
+    transform: translateY(-2px);
+    /* Levanta o botão levemente */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
 }
 
 /* === PÁGINA AUTOMAÇÃO E ROBÓTICA === */
 
 /* Container principal da seção Automação e Robótica */
 #automacao-robotica {
-    padding: 40px 20px; /* Espaçamento interno: 40px topo/baixo, 20px laterais */
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o container na página */
+    padding: 40px 20px;
+    /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o container na página */
 }
 
 /* Cabeçalho da página */
 .automacao-header {
-    text-align: center; /* Alinha o texto ao centro */
-    margin-bottom: 50px; /* Espaço abaixo do cabeçalho */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-bottom: 50px;
+    /* Espaço abaixo do cabeçalho */
 }
 
 /* Título principal */
 .automacao-header h1 {
-    margin-top: 2rem; /*Margem em cima ddo título*/
-    font-size: 3rem; /* Tamanho grande da fonte */
-    color: #333; /* Cor cinza escuro */
-    margin-bottom: 15px; /* Espaço abaixo do título */
+    margin-top: 2rem;
+    /*Margem em cima ddo título*/
+    font-size: 3rem;
+    /* Tamanho grande da fonte */
+    color: #333;
+    /* Cor cinza escuro */
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
 }
 
 /* Subtítulo/descrição */
 .automacao-header p {
-    font-size: 1.3rem; /* Tamanho médio da fonte */
-    color: #666; /* Cor cinza médio */
+    font-size: 1.3rem;
+    /* Tamanho médio da fonte */
+    color: #666;
+    /* Cor cinza médio */
 }
 
 /* Layout do conteúdo principal */
 .automacao-content {
-    display: grid; /* Usa CSS Grid para layout */
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
-    gap: 50px; /* Espaço entre as colunas */
-    align-items: start; /* Alinha os itens no topo */
-    margin-bottom: 50px; /* Espaço abaixo desta seção */
+    display: grid;
+    /* Usa CSS Grid para layout */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas de tamanho igual */
+    gap: 50px;
+    /* Espaço entre as colunas */
+    align-items: start;
+    /* Alinha os itens no topo */
+    margin-bottom: 50px;
+    /* Espaço abaixo desta seção */
 }
 
 /* Estilo da imagem */
 .automacao-image img {
-    width: 89%; /* Imagem ocupa espaço do container */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+    width: 89%;
+    /* Imagem ocupa espaço do container */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 /* Títulos das seções de informação */
 .automacao-info h2 {
-    color: #333; /* Cor cinza escuro */
-    font-size: 2rem; /* Tamanho grande da fonte */
-    margin-bottom: 20px; /* Espaço abaixo */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 2rem;
+    /* Tamanho grande da fonte */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
 /* Subtítulos coloridos */
 .automacao-info h3 {
-    color: #ff69b4; /* Cor rosa */
-    font-size: 1.5rem; /* Tamanho médio da fonte */
-    margin: 30px 0 15px 0; /* Margem: 30px topo, 0 laterais, 15px baixo */
+    color: #ff69b4;
+    /* Cor rosa */
+    font-size: 1.5rem;
+    /* Tamanho médio da fonte */
+    margin: 30px 0 15px 0;
+    /* Margem: 30px topo, 0 laterais, 15px baixo */
 }
 
 /* Parágrafos de texto */
 .automacao-info p {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
-    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    margin-bottom: 20px;
+    /* Espaço abaixo dos parágrafos */
 }
 
 /* Lista não ordenada */
 .automacao-info ul {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.8; /* Altura da linha maior para listas */
-    margin-bottom: 20px; /* Espaço abaixo da lista */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.8;
+    /* Altura da linha maior para listas */
+    margin-bottom: 20px;
+    /* Espaço abaixo da lista */
 }
 
 /* Itens da lista */
 .automacao-info li {
-    margin-bottom: 8px; /* Espaço entre os itens da lista */
+    margin-bottom: 8px;
+    /* Espaço entre os itens da lista */
 }
 
 /* ========== SEÇÃO DE APLICAÇÕES PRÁTICAS ========== */
 
 /* Container das aplicações práticas - LARGURA TOTAL */
 .applications-section {
-    width: 100%; /* Ocupa 100% da largura */
-    margin: 40px 0; /* Margem topo/baixo */
+    width: 100%;
+    /* Ocupa 100% da largura */
+    margin: 40px 0;
+    /* Margem topo/baixo */
 }
 
 /* Título da seção aplicações */
 .applications-section h2 {
-    color: #333; /* Cor cinza escuro */
-    font-size: 2rem; /* Tamanho grande */
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 30px; /* Espaço abaixo */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 2rem;
+    /* Tamanho grande */
+    text-align: center;
+    /* Centraliza o título */
+    margin-bottom: 30px;
+    /* Espaço abaixo */
 }
 
 /* Grid de aplicações */
 .applications {
-    display: grid; /* Usa CSS Grid */
-    grid-template-columns: 1fr 1fr; /* Duas colunas */
-    gap: 20px; /* Espaço entre os cards */
-    margin: 20px 0; /* Margem: 20px topo/baixo */
+    display: grid;
+    /* Usa CSS Grid */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas */
+    gap: 20px;
+    /* Espaço entre os cards */
+    margin: 20px 0;
+    /* Margem: 20px topo/baixo */
 }
 
 /* Cards individuais de aplicação */
 .app-card {
-    background: #ececec; /* Cor de fundo cinza muito claro */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas levemente arredondadas */
-    border-left: 4px solid #ff69b4; /* Borda lateral rosa */
+    background: #ececec;
+    /* Cor de fundo cinza muito claro */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas levemente arredondadas */
+    border-left: 4px solid #ff69b4;
+    /* Borda lateral rosa */
 }
 
 /* Título dos cards */
 .app-card h4 {
-    color: #333; /* Cor cinza escuro */
-    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #333;
+    /* Cor cinza escuro */
+    margin-bottom: 10px;
+    /* Espaço abaixo do título */
 }
 
 /* Texto dos cards */
 .app-card p {
-    color: #666; /* Cor cinza médio */
-    font-size: 0.9rem; /* Fonte um pouco menor */
-    margin: 0; /* Remove margens padrão */
+    color: #666;
+    /* Cor cinza médio */
+    font-size: 0.9rem;
+    /* Fonte um pouco menor */
+    margin: 0;
+    /* Remove margens padrão */
 }
 
 /* ========== SEÇÃO CTA ========== */
 
 /* Seção de call-to-action (chamada para ação) */
 .automacao-cta {
-    background: #ff69b4; /* Fundo rosa */
-    padding: 30px; /* Espaçamento interno generoso */
-    border-radius: 15px; /* Bordas arredondadas */
-    text-align: center; /* Texto centralizado */
-    margin-top: 40px; /* Espaço acima da seção */
-    width: 100%; /* Ocupa largura total */
+    background: #ff69b4;
+    /* Fundo rosa */
+    padding: 30px;
+    /* Espaçamento interno generoso */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Texto centralizado */
+    margin-top: 40px;
+    /* Espaço acima da seção */
+    width: 100%;
+    /* Ocupa largura total */
 }
 
 /* Título do CTA */
 .automacao-cta h3 {
-    color: white; /* Texto branco */
-    margin-bottom: 10px; /* Espaço abaixo */
+    color: white;
+    /* Texto branco */
+    margin-bottom: 10px;
+    /* Espaço abaixo */
 }
 
 /* Parágrafo do CTA */
 .automacao-cta p {
-    color: white; /* Texto branco */
-    opacity: 0.9; /* Leve transparência */
-    margin-bottom: 20px; /* Espaço abaixo */
+    color: white;
+    /* Texto branco */
+    opacity: 0.9;
+    /* Leve transparência */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
 /* Botão principal */
 .cta-button {
-    display: inline-block; /* Display inline-block para aceitar padding */
-    background: white; /* Fundo branco */
-    color: #ff69b4; /* Texto rosa */
-    padding: 12px 30px; /* Espaçamento interno confortável */
-    border-radius: 25px; /* Bordas completamente arredondadas (pill) */
-    text-decoration: none; /* Remove sublinhado do link */
-    font-weight: 600; /* Texto em negrito */
-    margin: 0 10px; /* Margem lateral entre botões */
-    transition: all 0.3s ease; /* Transição suave para hover */
+    display: inline-block;
+    /* Display inline-block para aceitar padding */
+    background: white;
+    /* Fundo branco */
+    color: #ff69b4;
+    /* Texto rosa */
+    padding: 12px 30px;
+    /* Espaçamento interno confortável */
+    border-radius: 25px;
+    /* Bordas completamente arredondadas (pill) */
+    text-decoration: none;
+    /* Remove sublinhado do link */
+    font-weight: 600;
+    /* Texto em negrito */
+    margin: 0 10px;
+    /* Margem lateral entre botões */
+    transition: all 0.3s ease;
+    /* Transição suave para hover */
 }
 
 /* Botão secundário */
 .cta-button.secondary {
-    background: transparent; /* Fundo transparente */
-    color: white; /* Texto branco */
-    border: 2px solid white; /* Borda branca */
+    background: transparent;
+    /* Fundo transparente */
+    color: white;
+    /* Texto branco */
+    border: 2px solid white;
+    /* Borda branca */
 }
 
 /* Efeito hover nos botões */
 .cta-button:hover {
-    transform: translateY(-2px); /* Levanta o botão levemente */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra */
+    transform: translateY(-2px);
+    /* Levanta o botão levemente */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
 }
 
 
@@ -944,176 +1347,253 @@ footer {
 
 /* Container principal da seção Blockchain */
 #blockchain {
-    padding: 40px 20px; /* Espaçamento interno: 40px topo/baixo, 20px laterais */
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o container na página */
+    padding: 40px 20px;
+    /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o container na página */
 }
 
 /* Cabeçalho da página */
 .block-header {
-    text-align: center; /* Alinha o texto ao centro */
-    margin-bottom: 50px; /* Espaço abaixo do cabeçalho */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-bottom: 50px;
+    /* Espaço abaixo do cabeçalho */
 }
 
 /* Título principal */
 .block-header h1 {
     margin-top: 2rem;
-    font-size: 3rem; /* Tamanho grande da fonte */
-    color: #333; /* Cor cinza escuro */
-    margin-bottom: 15px; /* Espaço abaixo do título */
+    font-size: 3rem;
+    /* Tamanho grande da fonte */
+    color: #333;
+    /* Cor cinza escuro */
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
 }
 
 /* Subtítulo/descrição */
 .block-header p {
-    font-size: 1.3rem; /* Tamanho médio da fonte */
-    color: #666; /* Cor cinza médio */
+    font-size: 1.3rem;
+    /* Tamanho médio da fonte */
+    color: #666;
+    /* Cor cinza médio */
 }
 
 /* Layout do conteúdo principal */
 .block-content {
-    display: grid; /* Usa CSS Grid para layout */
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
-    gap: 50px; /* Espaço entre as colunas */
-    align-items: start; /* Alinha os itens no topo */
-    margin-bottom: 50px; /* Espaço abaixo desta seção */
+    display: grid;
+    /* Usa CSS Grid para layout */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas de tamanho igual */
+    gap: 50px;
+    /* Espaço entre as colunas */
+    align-items: start;
+    /* Alinha os itens no topo */
+    margin-bottom: 50px;
+    /* Espaço abaixo desta seção */
 }
 
 /* Estilo da imagem */
 .block-image img {
-    width: 100%; /* Imagem ocupa 100% do container */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+    width: 100%;
+    /* Imagem ocupa 100% do container */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 /* Títulos das seções de informação */
 .blockchain-info h2 {
-    color: #333; /* Cor cinza escuro */
-    font-size: 2rem; /* Tamanho grande da fonte */
-    margin-bottom: 20px; /* Espaço abaixo */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 2rem;
+    /* Tamanho grande da fonte */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
 /* Subtítulos coloridos */
 .blockchain-info h3 {
-    color: #ff69b4; /* Cor rosa */
-    font-size: 1.5rem; /* Tamanho médio da fonte */
-    margin: 30px 0 15px 0; /* Margem: 30px topo, 0 laterais, 15px baixo */
+    color: #ff69b4;
+    /* Cor rosa */
+    font-size: 1.5rem;
+    /* Tamanho médio da fonte */
+    margin: 30px 0 15px 0;
+    /* Margem: 30px topo, 0 laterais, 15px baixo */
 }
 
 /* Parágrafos de texto */
 .blockchain-info p {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
-    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    margin-bottom: 20px;
+    /* Espaço abaixo dos parágrafos */
 }
 
 /* Lista não ordenada */
 .blockchain-info ul {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.8; /* Altura da linha maior para listas */
-    margin-bottom: 20px; /* Espaço abaixo da lista */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.8;
+    /* Altura da linha maior para listas */
+    margin-bottom: 20px;
+    /* Espaço abaixo da lista */
 }
 
 /* Itens da lista */
 .blockchain-info li {
-    margin-bottom: 8px; /* Espaço entre os itens da lista */
+    margin-bottom: 8px;
+    /* Espaço entre os itens da lista */
 }
 
 /* ========== SEÇÃO DE APLICAÇÕES PRÁTICAS ========== */
 
 /* Container das aplicações práticas - LARGURA TOTAL */
 .applications-section {
-    width: 100%; /* Ocupa 100% da largura */
-    margin: 40px 0; /* Margem topo/baixo */
-    grid-column: 1 / -1; /* Ocupa todas as colunas do grid */
+    width: 100%;
+    /* Ocupa 100% da largura */
+    margin: 40px 0;
+    /* Margem topo/baixo */
+    grid-column: 1 / -1;
+    /* Ocupa todas as colunas do grid */
 }
 
 /* Título da seção aplicações */
 .applications-section h2 {
-    color: #333; /* Cor cinza escuro */
-    font-size: 2rem; /* Tamanho grande */
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 30px; /* Espaço abaixo */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 2rem;
+    /* Tamanho grande */
+    text-align: center;
+    /* Centraliza o título */
+    margin-bottom: 30px;
+    /* Espaço abaixo */
 }
 
 /* Grid de aplicações */
 .applications {
-    display: grid; /* Usa CSS Grid */
-    grid-template-columns: 1fr 1fr; /* Duas colunas */
-    gap: 20px; /* Espaço entre os cards */
-    margin: 20px 0; /* Margem: 20px topo/baixo */
+    display: grid;
+    /* Usa CSS Grid */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas */
+    gap: 20px;
+    /* Espaço entre os cards */
+    margin: 20px 0;
+    /* Margem: 20px topo/baixo */
 }
 
 /* Cards individuais de aplicação */
 .app-card {
-    background: #ececec; /* Cor de fundo cinza muito claro */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas levemente arredondadas */
-    border-left: 4px solid #ff69b4; /* Borda lateral rosa */
+    background: #ececec;
+    /* Cor de fundo cinza muito claro */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas levemente arredondadas */
+    border-left: 4px solid #ff69b4;
+    /* Borda lateral rosa */
 }
 
 /* Título dos cards */
 .app-card h4 {
-    color: #333; /* Cor cinza escuro */
-    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #333;
+    /* Cor cinza escuro */
+    margin-bottom: 10px;
+    /* Espaço abaixo do título */
 }
 
 /* Texto dos cards */
 .app-card p {
-    color: #666; /* Cor cinza médio */
-    font-size: 0.9rem; /* Fonte um pouco menor */
-    margin: 0; /* Remove margens padrão */
+    color: #666;
+    /* Cor cinza médio */
+    font-size: 0.9rem;
+    /* Fonte um pouco menor */
+    margin: 0;
+    /* Remove margens padrão */
 }
 
 /* ========== SEÇÃO CTA BLOCKCHAIN ========== */
 
 /* Seção de call-to-action (chamada para ação) */
 .blockchain-cta {
-    background: #ff69b4; /* Fundo rosa */
-    padding: 30px; /* Espaçamento interno generoso */
-    border-radius: 15px; /* Bordas arredondadas */
-    text-align: center; /* Texto centralizado */
-    margin-top: 40px; /* Espaço acima da seção */
-    width: 100%; /* Ocupa largura total */
-    grid-column: 1 / -1; /* Ocupa todas as colunas do grid */
+    background: #ff69b4;
+    /* Fundo rosa */
+    padding: 30px;
+    /* Espaçamento interno generoso */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Texto centralizado */
+    margin-top: 40px;
+    /* Espaço acima da seção */
+    width: 100%;
+    /* Ocupa largura total */
+    grid-column: 1 / -1;
+    /* Ocupa todas as colunas do grid */
 }
 
 /* Título do CTA */
 .blockchain-cta h3 {
-    color: white; /* Texto branco */
-    margin-bottom: 10px; /* Espaço abaixo */
+    color: white;
+    /* Texto branco */
+    margin-bottom: 10px;
+    /* Espaço abaixo */
 }
 
 /* Parágrafo do CTA */
 .blockchain-cta p {
-    color: white; /* Texto branco */
-    opacity: 0.9; /* Leve transparência */
-    margin-bottom: 20px; /* Espaço abaixo */
+    color: white;
+    /* Texto branco */
+    opacity: 0.9;
+    /* Leve transparência */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
 /* Botão principal */
 .cta-button {
-    display: inline-block; /* Display inline-block para aceitar padding */
-    background: white; /* Fundo branco */
-    color: #ff69b4; /* Texto rosa */
-    padding: 12px 30px; /* Espaçamento interno confortável */
-    border-radius: 25px; /* Bordas completamente arredondadas (pill) */
-    text-decoration: none; /* Remove sublinhado do link */
-    font-weight: 600; /* Texto em negrito */
-    margin: 0 10px; /* Margem lateral entre botões */
-    transition: all 0.3s ease; /* Transição suave para hover */
+    display: inline-block;
+    /* Display inline-block para aceitar padding */
+    background: white;
+    /* Fundo branco */
+    color: #ff69b4;
+    /* Texto rosa */
+    padding: 12px 30px;
+    /* Espaçamento interno confortável */
+    border-radius: 25px;
+    /* Bordas completamente arredondadas (pill) */
+    text-decoration: none;
+    /* Remove sublinhado do link */
+    font-weight: 600;
+    /* Texto em negrito */
+    margin: 0 10px;
+    /* Margem lateral entre botões */
+    transition: all 0.3s ease;
+    /* Transição suave para hover */
 }
 
 /* Botão secundário */
 .cta-button.secondary {
-    background: transparent; /* Fundo transparente */
-    color: white; /* Texto branco */
-    border: 2px solid white; /* Borda branca */
+    background: transparent;
+    /* Fundo transparente */
+    color: white;
+    /* Texto branco */
+    border: 2px solid white;
+    /* Borda branca */
 }
 
 /* Efeito hover nos botões */
 .cta-button:hover {
-    transform: translateY(-2px); /* Levanta o botão levemente */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Adiciona sombra */
+    transform: translateY(-2px);
+    /* Levanta o botão levemente */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra */
 }
 
 
@@ -1121,103 +1601,145 @@ footer {
 
 /* Container principal da seção Cybersecurity */
 #cybersecurity {
-    padding: 40px 20px; /* Espaçamento interno: 40px topo/baixo, 20px laterais */
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o container na página */
+    padding: 40px 20px;
+    /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o container na página */
 }
 
 /* Cabeçalho da página */
 .cyber-header {
-    text-align: center; /* Alinha o texto ao centro */
-    margin-bottom: 50px; /* Espaço abaixo do cabeçalho */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-bottom: 50px;
+    /* Espaço abaixo do cabeçalho */
 }
 
 /* Título principal */
 .cyber-header h1 {
     margin-top: 2rem;
-    font-size: 3rem; /* Tamanho grande da fonte */
-    color: #333; /* Cor cinza escuro */
-    margin-bottom: 15px; /* Espaço abaixo do título */
+    font-size: 3rem;
+    /* Tamanho grande da fonte */
+    color: #333;
+    /* Cor cinza escuro */
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
 }
 
 /* Subtítulo/descrição */
 .cyber-header p {
-    font-size: 1.3rem; /* Tamanho médio da fonte */
-    color: #666; /* Cor cinza médio */
+    font-size: 1.3rem;
+    /* Tamanho médio da fonte */
+    color: #666;
+    /* Cor cinza médio */
 }
 
 /* Layout do conteúdo principal */
 .cyber-content {
-    display: grid; /* Usa CSS Grid para layout */
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
-    gap: 50px; /* Espaço entre as colunas */
-    align-items: start; /* Alinha os itens no topo */
-    margin-bottom: 50px; /* Espaço abaixo desta seção */
+    display: grid;
+    /* Usa CSS Grid para layout */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas de tamanho igual */
+    gap: 50px;
+    /* Espaço entre as colunas */
+    align-items: start;
+    /* Alinha os itens no topo */
+    margin-bottom: 50px;
+    /* Espaço abaixo desta seção */
 }
 
 /* Estilo da imagem */
 .cyber-image img {
-    width: 100%; /* Imagem ocupa 100% do container */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+    width: 100%;
+    /* Imagem ocupa 100% do container */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
 /* Títulos das seções de informação */
 .cyber-info h2 {
-    color: #333; /* Cor cinza escuro */
-    font-size: 2rem; /* Tamanho grande da fonte */
-    margin-bottom: 20px; /* Espaço abaixo */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 2rem;
+    /* Tamanho grande da fonte */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
 /* Subtítulos coloridos */
 .cyber-info h3 {
-    color: #ff69b4; /* Cor rosa */
-    font-size: 1.5rem; /* Tamanho médio da fonte */
-    margin: 30px 0 15px 0; /* Margem: 30px topo, 0 laterais, 15px baixo */
+    color: #ff69b4;
+    /* Cor rosa */
+    font-size: 1.5rem;
+    /* Tamanho médio da fonte */
+    margin: 30px 0 15px 0;
+    /* Margem: 30px topo, 0 laterais, 15px baixo */
 }
 
 /* Parágrafos de texto */
 .cyber-info p {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
-    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    margin-bottom: 20px;
+    /* Espaço abaixo dos parágrafos */
 }
 
 /* Lista não ordenada */
 .cyber-info ul {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.8; /* Altura da linha maior para listas */
-    margin-bottom: 20px; /* Espaço abaixo da lista */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.8;
+    /* Altura da linha maior para listas */
+    margin-bottom: 20px;
+    /* Espaço abaixo da lista */
 }
 
 /* Itens da lista */
 .cyber-info li {
-    margin-bottom: 8px; /* Espaço entre os itens da lista */
+    margin-bottom: 8px;
+    /* Espaço entre os itens da lista */
 }
 
 /* ========== SEÇÃO CTA CYBERSECURITY ========== */
 
 /* Seção de call-to-action (chamada para ação) */
 .cyber-cta {
-    background: #ff69b4; /* Fundo rosa */
-    padding: 30px; /* Espaçamento interno generoso */
-    border-radius: 15px; /* Bordas arredondadas */
-    text-align: center; /* Texto centralizado */
-    margin-top: 40px; /* Espaço acima da seção */
-    width: 100%; /* Ocupa largura total */
+    background: #ff69b4;
+    /* Fundo rosa */
+    padding: 30px;
+    /* Espaçamento interno generoso */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Texto centralizado */
+    margin-top: 40px;
+    /* Espaço acima da seção */
+    width: 100%;
+    /* Ocupa largura total */
 }
 
 /* Título do CTA */
 .cyber-cta h3 {
-    color: white; /* Texto branco */
-    margin-bottom: 10px; /* Espaço abaixo */
+    color: white;
+    /* Texto branco */
+    margin-bottom: 10px;
+    /* Espaço abaixo */
 }
 
 /* Parágrafo do CTA */
 .cyber-cta p {
-    color: white; /* Texto branco */
-    opacity: 0.9; /* Leve transparência */
-    margin-bottom: 20px; /* Espaço abaixo */
+    color: white;
+    /* Texto branco */
+    opacity: 0.9;
+    /* Leve transparência */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
 }
 
 
@@ -1225,224 +1747,575 @@ footer {
 /* === PÁGINA DE CERTIFICADOS === */
 
 /* Remove margens e paddings padrão do body e html para o gradiente cobrir toda a tela */
-html, body {
-    margin: 0; /* Remove margens padrão do navegador */
-    padding: 0; /* Remove paddings padrão do navegador */
+html,
+body {
+    margin: 0;
+    /* Remove margens padrão do navegador */
+    padding: 0;
+    /* Remove paddings padrão do navegador */
 }
 
 /* Container principal com gradiente que cobre toda a tela */
 #certificados {
-    padding: 40px 120px; /* Espaçamento interno: 40px topo/baixo, 20px laterais */
-    min-height: 100vh; /* Altura mínima de 100% da viewport */
-    background: linear-gradient(135deg, #ffc9e1 0%, #180221 100%); /* Gradiente rosa para roxo escuro */
-    width: 100%; /* Largura de 100% da tela */
-    box-sizing: border-box; /* Inclui padding na largura total */
+    padding: 40px 120px;
+    /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    min-height: 100vh;
+    /* Altura mínima de 100% da viewport */
+    background: linear-gradient(135deg, #ffc9e1 0%, #180221 100%);
+    /* Gradiente rosa para roxo escuro */
+    width: 100%;
+    /* Largura de 100% da tela */
+    box-sizing: border-box;
+    /* Inclui padding na largura total */
 }
 
 /* Container do conteúdo para centralizar e limitar a largura */
 .certs-container {
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o container horizontalmente */
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
 }
 
 /* Cabeçalho da página de certificados */
 .certs-header {
-    text-align: center; /* Alinha o texto ao centro */
-    margin-bottom: 50px; /* Espaço abaixo do cabeçalho */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-bottom: 50px;
+    /* Espaço abaixo do cabeçalho */
 }
 
 /* Título principal da página */
 .certs-header h1 {
-    margin-top: 2rem; /* Espaço acima do título */
-    font-size: 3rem; /* Tamanho grande da fonte */
-    color: rgb(0, 0, 0); /* Cor do texto branca para contraste com o gradiente escuro */
-    margin-bottom: 15px; /* Espaço abaixo do título */
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Sombra suave no texto para melhor legibilidade */
+    margin-top: 2rem;
+    /* Espaço acima do título */
+    font-size: 3rem;
+    /* Tamanho grande da fonte */
+    color: rgb(0, 0, 0);
+    /* Cor do texto branca para contraste com o gradiente escuro */
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* Sombra suave no texto para melhor legibilidade */
 }
 
 /* Descrição do cabeçalho */
 .certs-header p {
-    font-size: 1.3rem; /* Tamanho médio da fonte */
-    color: rgba(0, 0, 0, 0.9); /* Branco com leve transparência */
+    font-size: 1.3rem;
+    /* Tamanho médio da fonte */
+    color: rgba(0, 0, 0, 0.9);
+    /* Branco com leve transparência */
 }
 
 /* Grid que contém todos os cards de certificados */
 .certs-grid {
-    display: grid; /* Usa CSS Grid para layout */
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Colunas responsivas que se ajustam automaticamente */
-    gap: 30px; /* Espaço entre os cards do grid */
-    margin-bottom: 50px; /* Espaço abaixo do grid */
+    display: grid;
+    /* Usa CSS Grid para layout */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Colunas responsivas que se ajustam automaticamente */
+    gap: 30px;
+    /* Espaço entre os cards do grid */
+    margin-bottom: 50px;
+    /* Espaço abaixo do grid */
 }
 
 /* Card individual de cada certificado */
 .cert-card {
-    background: #e9e9e9; /* Cor cinza clara */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave ao redor do card */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para hover */
-    display: flex; /* Usa flexbox para layout interno */
-    flex-direction: column; /* Organiza os elementos em coluna */
+    background: #e9e9e9;
+    /* Cor cinza clara */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra suave ao redor do card */
+    overflow: hidden;
+    /* Esconde qualquer conteúdo que ultrapasse as bordas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transições suaves para hover */
+    display: flex;
+    /* Usa flexbox para layout interno */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
 }
 
 /* Efeito quando o mouse passa sobre o card */
 .cert-card:hover {
-    transform: translateY(-5px); /* Move o card 5px para cima */
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15); /* Aumenta a sombra no hover */
+    transform: translateY(-5px);
+    /* Move o card 5px para cima */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    /* Aumenta a sombra no hover */
 }
 
 /* Container da imagem do certificado */
 .cert-image {
-    height: 250px; /* Altura aumentada para acomodar melhor a imagem */
-    overflow: visible; /* Permite que a imagem seja exibida completamente sem cortes */
-    display: flex; /* Layout flexbox para centralização */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 5px; /* Espaçamento interno ao redor da imagem */
+    height: 250px;
+    /* Altura aumentada para acomodar melhor a imagem */
+    overflow: visible;
+    /* Permite que a imagem seja exibida completamente sem cortes */
+    display: flex;
+    /* Layout flexbox para centralização */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    padding: 5px;
+    /* Espaçamento interno ao redor da imagem */
 }
 
 /* Estilo da imagem dentro do card */
 .cert-image img {
-    width: 280px; /* Largura fixa para consistência entre cards */
-    height: auto; /* Altura automática para manter proporção original */
-    border-radius: 5%; /* Bordas levemente arredondadas */
-    margin: 0.50rem auto; /* Centralização com espaçamento vertical reduzido */
-    object-fit: contain; /* Garante que toda a imagem seja visível sem distorção */
-    max-height: 230px; /* Altura máxima para evitar que a imagem fique muito grande */
+    width: 280px;
+    /* Largura fixa para consistência entre cards */
+    height: auto;
+    /* Altura automática para manter proporção original */
+    border-radius: 5%;
+    /* Bordas levemente arredondadas */
+    margin: 0.50rem auto;
+    /* Centralização com espaçamento vertical reduzido */
+    object-fit: contain;
+    /* Garante que toda a imagem seja visível sem distorção */
+    max-height: 230px;
+    /* Altura máxima para evitar que a imagem fique muito grande */
 }
 
 /* Efeito de zoom na imagem quando o card é hover */
 .cert-card:hover .cert-image img {
-    transform: scale(1.05); /* Aumenta a imagem em 5% */
+    transform: scale(1.05);
+    /* Aumenta a imagem em 5% */
 }
 
 /* Container das informações textuais do certificado */
 .cert-info {
-    padding: 25px; /* Espaçamento interno */
-    flex-grow: 1; /* Ocupa todo o espaço disponível restante */
-    display: flex; /* Flexbox para alinhamento interno */
-    flex-direction: column; /* Organiza em coluna */
+    padding: 25px;
+    /* Espaçamento interno */
+    flex-grow: 1;
+    /* Ocupa todo o espaço disponível restante */
+    display: flex;
+    /* Flexbox para alinhamento interno */
+    flex-direction: column;
+    /* Organiza em coluna */
 }
 
 /* Título do certificado */
 .cert-info h3 {
-    color: #333; /* Cor cinza escuro */
-    font-size: 1.3rem; /* Tamanho da fonte */
-    margin-bottom: 10px; /* Espaço abaixo */
-    font-weight: 600; /* Peso da fonte semi-negrito */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 1.3rem;
+    /* Tamanho da fonte */
+    margin-bottom: 10px;
+    /* Espaço abaixo */
+    font-weight: 600;
+    /* Peso da fonte semi-negrito */
 }
 
 /* Organização/empresa que emitiu o certificado */
 .cert-org {
-    color: #ff69b4; /* Cor rosa para destacar a organização */
-    font-weight: 600; /* Texto em negrito */
-    margin-bottom: 10px; /* Espaço abaixo */
-    font-size: 0.9rem; /* Fonte um pouco menor */
+    color: #ff69b4;
+    /* Cor rosa para destacar a organização */
+    font-weight: 600;
+    /* Texto em negrito */
+    margin-bottom: 10px;
+    /* Espaço abaixo */
+    font-size: 0.9rem;
+    /* Fonte um pouco menor */
 }
 
 /* Descrição do certificado */
 .cert-desc {
-    color: #666; /* Cor cinza médio */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
-    margin-bottom: 15px; /* Espaço abaixo */
-    flex-grow: 1; /* Ocupa espaço disponível para alinhar categorias no final */
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    margin-bottom: 15px;
+    /* Espaço abaixo */
+    flex-grow: 1;
+    /* Ocupa espaço disponível para alinhar categorias no final */
 }
 
 /* Categoria/tag do certificado */
 .cert-category {
-    background: #f8f9fa; /* Fundo cinza muito claro */
-    color: #333; /* Cor do texto cinza escuro */
-    padding: 5px 12px; /* Espaçamento interno */
-    border-radius: 20px; /* Bordas completamente arredondadas */
-    font-size: 0.8rem; /* Fonte pequena */
-    font-weight: 600; /* Texto em negrito */
-    align-self: flex-start; /* Alinha à esquerda */
-    border: 1px solid #e9ecef; /* Borda sutil */
+    background: #f8f9fa;
+    /* Fundo cinza muito claro */
+    color: #333;
+    /* Cor do texto cinza escuro */
+    padding: 5px 12px;
+    /* Espaçamento interno */
+    border-radius: 20px;
+    /* Bordas completamente arredondadas */
+    font-size: 0.8rem;
+    /* Fonte pequena */
+    font-weight: 600;
+    /* Texto em negrito */
+    align-self: flex-start;
+    /* Alinha à esquerda */
+    border: 1px solid #e9ecef;
+    /* Borda sutil */
 }
 
 /* Seção "Cursando Atualmente" */
 .certs-current {
-    background:#202122; /* Fundo branco semi-transparente */
-    padding: 40px; /* Espaçamento interno generoso */
-    border-radius: 15px; /* Bordas arredondadas */
-    margin-top: 40px; /* Espaço acima da seção */
-    max-width: 900px; /* Largura máxima */
-    margin-left: auto; /* Centraliza a seção */
-    margin-right: auto; /* Centraliza a seção */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+    background: #202122;
+    /* Fundo branco semi-transparente */
+    padding: 40px;
+    /* Espaçamento interno generoso */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    margin-top: 40px;
+    /* Espaço acima da seção */
+    max-width: 900px;
+    /* Largura máxima */
+    margin-left: auto;
+    /* Centraliza a seção */
+    margin-right: auto;
+    /* Centraliza a seção */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Borda sutil */
 }
 
 /* Título da seção */
 .certs-current h3 {
-    color: #ffffff; /* Cor cinza escuro */
-    font-size: 1.8rem; /* Tamanho grande da fonte */
-    margin-bottom: 15px; /* Espaço abaixo */
-    text-align: center; /* Texto centralizado */
+    color: #ffffff;
+    /* Cor cinza escuro */
+    font-size: 1.8rem;
+    /* Tamanho grande da fonte */
+    margin-bottom: 15px;
+    /* Espaço abaixo */
+    text-align: center;
+    /* Texto centralizado */
 }
 
 /* Descrição da seção */
 .certs-current p {
-    color: #ffffff; /* Cor cinza médio */
-    margin-bottom: 30px; /* Espaço abaixo */
-    font-size: 1.1rem; /* Tamanho médio da fonte */
-    text-align: center; /* Texto centralizado */
+    color: #ffffff;
+    /* Cor cinza médio */
+    margin-bottom: 30px;
+    /* Espaço abaixo */
+    font-size: 1.1rem;
+    /* Tamanho médio da fonte */
+    text-align: center;
+    /* Texto centralizado */
 }
 
 /* Grid dos cursos atuais */
 .current-courses {
-    display: grid; /* Usa CSS Grid para layout */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas responsivas */
-    gap: 20px; /* Espaço entre os itens */
-    margin-bottom: 30px; /* Espaço abaixo do grid */
+    display: grid;
+    /* Usa CSS Grid para layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Colunas responsivas */
+    gap: 20px;
+    /* Espaço entre os itens */
+    margin-bottom: 30px;
+    /* Espaço abaixo do grid */
 }
 
 /* Item individual do curso */
 .course-item {
-    background: #e9e9e9; /* Cor cinza clara */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    border-left: 4px solid #ff69b4; /* Borda lateral rosa */
-    transition: transform 0.3s ease; /* Transição suave para hover */
+    background: #e9e9e9;
+    /* Cor cinza clara */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    border-left: 4px solid #ff69b4;
+    /* Borda lateral rosa */
+    transition: transform 0.3s ease;
+    /* Transição suave para hover */
 }
 
 /* Efeito hover nos itens de curso */
 .course-item:hover {
-    transform: translateY(-3px); /* Move o item para cima levemente */
+    transform: translateY(-3px);
+    /* Move o item para cima levemente */
 }
 
 /* Nome do curso */
 .course-item h4 {
     text-align: center;
-    color: #333; /* Cor cinza escuro */
-    font-size: 1.1rem; /* Tamanho da fonte */
-    margin-bottom: 8px; /* Espaço abaixo */
-    font-weight: 600; /* Texto em negrito */
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 1.1rem;
+    /* Tamanho da fonte */
+    margin-bottom: 8px;
+    /* Espaço abaixo */
+    font-weight: 600;
+    /* Texto em negrito */
 }
 
 /* Instituição do curso */
 .course-item .course-org {
-    color: #ff69b4; /* Cor rosa */
-    font-weight: 600; /* Texto em negrito */
-    font-size: 0.9rem; /* Fonte um pouco menor */
-    margin-bottom: 10px; /* Espaço abaixo */
+    color: #ff69b4;
+    /* Cor rosa */
+    font-weight: 600;
+    /* Texto em negrito */
+    font-size: 0.9rem;
+    /* Fonte um pouco menor */
+    margin-bottom: 10px;
+    /* Espaço abaixo */
 }
 
 /* Descrição do curso */
 .course-item .course-desc {
-    color: #666; /* Cor cinza médio */
-    font-size: 0.9rem; /* Fonte menor */
-    line-height: 1.5; /* Altura da linha */
+    color: #666;
+    /* Cor cinza médio */
+    font-size: 0.9rem;
+    /* Fonte menor */
+    line-height: 1.5;
+    /* Altura da linha */
 }
 
 /* Container dos botões */
 .certs-buttons {
-    display: flex; /* Usa flexbox para os botões */
-    justify-content: center; /* Centraliza os botões */
-    gap: 20px; /* Espaço entre os botões */
-    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    display: flex;
+    /* Usa flexbox para os botões */
+    justify-content: center;
+    /* Centraliza os botões */
+    gap: 20px;
+    /* Espaço entre os botões */
+    flex-wrap: wrap;
+    /* Permite quebra de linha em telas pequenas */
 }
 
+/* === PÁGINA DE PROJETOS === */
 
+/* Container principal da seção de projetos */
+#projetos {
+    padding: 40px 20px;
+    /* Espaçamento interno: 40px topo/baixo, 20px laterais */
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o container na página */
+}
 
+/* Cabeçalho da página de projetos */
+.projetos-header {
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-bottom: 50px;
+    /* Espaço abaixo do cabeçalho */
+}
 
+/* Título principal da página */
+.projetos-header h1 {
+    margin-top: 2rem;
+    /* Espaço acima do título */
+    font-size: 3rem;
+    /* Tamanho grande da fonte */
+    color: #333;
+    /* Cor cinza escuro */
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
+}
+
+/* Descrição do cabeçalho */
+.projetos-header p {
+    font-size: 1.3rem;
+    /* Tamanho médio da fonte */
+    color: #666;
+    /* Cor cinza médio */
+}
+
+/* Grid que contém todos os cards de projetos */
+.projetos-grid {
+    display: grid;
+    /* Usa CSS Grid para layout */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* Colunas responsivas que se ajustam automaticamente */
+    gap: 40px;
+    /* Espaço entre os cards do grid */
+    margin-bottom: 50px;
+    /* Espaço abaixo do grid */
+}
+
+/* Card individual de cada projeto */
+.projeto-card {
+    background: white;
+    /* Fundo branco sólido */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra suave ao redor do card */
+    overflow: hidden;
+    /* Esconde qualquer conteúdo que ultrapasse as bordas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transições suaves para hover */
+    display: flex;
+    /* Usa flexbox para layout interno */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+}
+
+/* Efeito quando o mouse passa sobre o card */
+.projeto-card:hover {
+    transform: translateY(-5px);
+    /* Move o card 5px para cima */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    /* Aumenta a sombra no hover */
+}
+
+/* Container da imagem do projeto */
+.projeto-imagem {
+    height: 200px;
+    /* Altura fixa para todas as imagens */
+    overflow: hidden;
+    /* Esconde partes da imagem que ultrapassem o container */
+}
+
+/* Estilo da imagem dentro do card */
+.projeto-imagem img {
+    width: 100%;
+    /* Largura de 100% do container */
+    height: 100%;
+    /* Altura de 100% do container */
+    object-fit: cover;
+    /* Corta a imagem para preencher o container mantendo proporção */
+    transition: transform 0.3s ease;
+    /* Transição suave para o efeito de zoom */
+}
+
+/* Efeito de zoom na imagem quando o card é hover */
+.projeto-card:hover .projeto-imagem img {
+    transform: scale(1.05);
+    /* Aumenta a imagem em 5% */
+}
+
+/* Container do conteúdo textual do projeto */
+.projeto-conteudo {
+    padding: 25px;
+    /* Espaçamento interno */
+    flex-grow: 1;
+    /* Ocupa todo o espaço disponível restante */
+    display: flex;
+    /* Flexbox para alinhamento interno */
+    flex-direction: column;
+    /* Organiza em coluna */
+}
+
+/* Título do projeto */
+.projeto-conteudo h3 {
+    color: #333;
+    /* Cor cinza escuro */
+    font-size: 1.4rem;
+    /* Tamanho da fonte */
+    margin-bottom: 15px;
+    /* Espaço abaixo */
+    font-weight: 600;
+    /* Peso da fonte semi-negrito */
+}
+
+/* Descrição do projeto */
+.projeto-descricao {
+    color: #666;
+    /* Cor cinza médio */
+    line-height: 1.6;
+    /* Altura da linha para melhor legibilidade */
+    margin-bottom: 20px;
+    /* Espaço abaixo */
+    flex-grow: 1;
+    /* Ocupa espaço disponível para alinhar botões no final */
+}
+
+/* Container das tags de tecnologias */
+.projeto-tech {
+    display: flex;
+    /* Usa flexbox para as tags */
+    flex-wrap: wrap;
+    /* Permite quebra de linha se necessário */
+    gap: 8px;
+    /* Espaço entre as tags */
+    margin-bottom: 20px;
+    /* Espaço abaixo das tags */
+}
+
+/* Tags individuais de tecnologia */
+.projeto-tech span {
+    background: #f8f9fa;
+    /* Fundo cinza muito claro */
+    color: #333;
+    /* Cor do texto cinza escuro */
+    padding: 4px 12px;
+    /* Espaçamento interno */
+    border-radius: 20px;
+    /* Bordas completamente arredondadas */
+    font-size: 0.8rem;
+    /* Fonte pequena */
+    font-weight: 500;
+    /* Peso da fonte médio */
+    border: 1px solid #e9ecef;
+    /* Borda sutil */
+}
+
+/* Botão de download do projeto */
+.download-btn {
+    display: inline-flex;
+    /* Flexbox inline para alinhar ícone e texto */
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    background: #ffc9e1;
+    /* Fundo rosa */
+    color: rgb(0, 0, 0);
+    /* Texto branco */
+    padding: 12px 24px;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Bordas levemente arredondadas */
+    text-decoration: none;
+    /* Remove sublinhado do link */
+    font-weight: 600;
+    /* Texto em negrito */
+    transition: all 0.3s ease;
+    /* Transição suave para todas as propriedades */
+    border: 2px solid #ffc9e1;
+    /* Borda com mesma cor do fundo */
+    text-align: center;
+    /* Texto centralizado */
+}
+
+/* Efeito quando o mouse passa sobre o botão de download */
+.download-btn:hover {
+    background: transparent;
+    /* Fundo transparente */
+    color: #ff69b4;
+    /* Texto rosa */
+    transform: translateY(-2px);
+    /* Move o botão 2px para cima */
+}
+
+/* Seção de call-to-action no final da página */
+.projetos-cta {
+    background: #ffc9e1;
+    /* Fundo rosa */
+    padding: 40px;
+    /* Espaçamento interno generoso */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Texto centralizado */
+    margin-top: 40px;
+    /* Espaço acima da seção */
+}
+
+/* Título da seção CTA */
+.projetos-cta h3 {
+    color: rgb(0, 0, 0);
+    /* Texto branco */
+    font-size: 1.8rem;
+    /* Tamanho grande da fonte */
+    margin-bottom: 15px;
+    /* Espaço abaixo */
+}
+
+/* Parágrafo da seção CTA */
+.projetos-cta p {
+    color: rgb(0, 0, 0);
+    /* Texto branco */
+    opacity: 0.9;
+    /* Leve transparência */
+    margin-bottom: 25px;
+    /* Espaço abaixo */
+    font-size: 1.1rem;
+    /* Tamanho médio da fonte */
+}
