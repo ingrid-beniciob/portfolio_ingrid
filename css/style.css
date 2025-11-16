@@ -2102,7 +2102,7 @@ body {
     /* Espaço acima do título */
     font-size: 3rem;
     /* Tamanho grande da fonte */
-    color: #333;
+    color: #000000;
     /* Cor cinza escuro */
     margin-bottom: 15px;
     /* Espaço abaixo do título */
@@ -2112,7 +2112,7 @@ body {
 .projetos-header p {
     font-size: 1.3rem;
     /* Tamanho médio da fonte */
-    color: #666;
+    color: #000000;
     /* Cor cinza médio */
 }
 
@@ -2319,3 +2319,240 @@ body {
     font-size: 1.1rem;
     /* Tamanho médio da fonte */
 }
+
+/* =====  PÁGINA DE EVENTOS ===== */
+
+/* Cabeçalho da seção de eventos */
+.eventos-header {
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /* Adiciona espaçamento interno: 60px top/bottom, 20px left/right */
+    padding: 60px 20px 40px;
+    /* Aplica um gradiente linear de 135 graus com duas cores */
+    background: linear-gradient(135deg, #ffc9e1 0%, #180221 100%);
+    /* Define a cor do texto como branco */
+    color: rgb(0, 0, 0);
+    /* Adiciona margem na parte inferior de 50px */
+    margin-bottom: 50px;
+}
+
+/* Título principal do cabeçalho */
+.eventos-header h1 {
+    /* Define o tamanho da fonte como 2.8 vezes o tamanho padrão */
+    font-size: 2.8rem;
+    /* Adiciona margem inferior de 15px */
+    margin-bottom: 15px;
+    /* Define o peso da fonte como negrito (700) */
+    font-weight: 700;
+}
+
+/* Parágrafo do cabeçalho */
+.eventos-header p {
+    /* Define o tamanho da fonte como 1.2 vezes o tamanho padrão */
+    font-size: 1.2rem;
+    /* Define a largura máxima do elemento como 700px */
+    max-width: 700px;
+    /* Centraliza o elemento horizontalmente com margem automática */
+    margin: 0 auto;
+    /* Define a opacidade do texto como 90% */
+    opacity: 0.9;
+}
+
+/* ===== ESTILOS DA TIMELINE ===== */
+
+/* Container principal da timeline */
+.timeline {
+    /* Define o posicionamento como relativo para elementos filhos absolutos */
+    position: relative;
+    /* Define a largura máxima como 1200px */
+    max-width: 1200px;
+    /* Centraliza horizontalmente com margem automática e adiciona 80px na parte inferior */
+    margin: 0 auto 80px;
+    /* Adiciona espaçamento interno de 40px top/bottom e 20px left/right */
+    padding: 40px 20px;
+}
+
+/* Linha vertical central da timeline (pseudo-elemento) */
+.timeline::after {
+    /* Adiciona conteúdo vazio necessário para pseudo-elementos */
+    content: '';
+    /* Posiciona absolutamente em relação à timeline */
+    position: absolute;
+    /* Define a largura da linha como 6px */
+    width: 6px;
+    /* Aplica um gradiente vertical da cor roxa para azul */
+    background: linear-gradient(135deg, #ffc9e1 0%, #180221 100%);
+    /* Posiciona no topo do container */
+    top: 0;
+    /* Estende até o fundo do container */
+    bottom: 0;
+    /* Posiciona a 50% da esquerda */
+    left: 50%;
+    /* Corrige o posicionamento central subtraindo metade da largura */
+    margin-left: -3px;
+    /* Arredonda as bordas da linha */
+    border-radius: 10px;
+}
+
+/* Item individual da timeline */
+.timeline-item {
+    /* Adiciona espaçamento interno de 10px top/bottom e 40px left/right */
+    padding: 10px 40px;
+    /* Define posicionamento relativo para elementos filhos */
+    position: relative;
+    /* Define a largura como 50% do container */
+    width: 50%;
+    /* Inclui padding e border no cálculo de width */
+    box-sizing: border-box;
+    /* Adiciona margem inferior de 60px entre os itens */
+    margin-bottom: 60px;
+}
+
+/* Círculo indicador na timeline (pseudo-elemento) */
+.timeline-item::after {
+    /* Adiciona conteúdo vazio */
+    content: '';
+    /* Posiciona absolutamente em relação ao item */
+    position: absolute;
+    /* Define largura do círculo como 20px */
+    width: 20px;
+    /* Define altura do círculo como 20px */
+    height: 20px;
+    /* Define cor de fundo roxa */
+    background: #ff69b4;
+    /* Adiciona borda branca de 4px */
+    border: 4px solid white;
+    /* Posiciona 25px do topo do item */
+    top: 25px;
+    /* Torna o elemento circular com border-radius 50% */
+    border-radius: 50%;
+    /* Garante que fique acima de outros elementos */
+    z-index: 1;
+    /* Adiciona sombra externa roxa ao redor do círculo */
+    box-shadow: 0 0 0 4px #000000;
+}
+
+/* Item alinhado à esquerda */
+.left {
+    /* Alinha à esquerda do container */
+    left: 0;
+}
+
+/* Item alinhado à direita */
+.right {
+    /* Alinha à direita, começando a 50% da largura */
+    left: 50%;
+}
+
+/* Posiciona o círculo dos itens da direita */
+.right::after {
+    /* Posiciona o círculo 10px para a esquerda do item */
+    left: -10px;
+}
+
+/* Posiciona o círculo dos itens da esquerda */
+.left::after {
+    /* Posiciona o círculo 10px para a direita do item */
+    right: -10px;
+}
+
+/* Conteúdo dentro de cada item da timeline */
+.timeline-content {
+    /* Adiciona espaçamento interno de 20px top/bottom e 30px left/right */
+    padding: 20px 30px;
+    /* Define fundo branco */
+    background: white;
+    /* Arredonda as bordas com 15px */
+    border-radius: 15px;
+    /* Adiciona sombra suave ao redor do card */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    /* Adiciona transição suave para transform e box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Define posicionamento relativo */
+    position: relative;
+}
+
+/* Efeito hover no conteúdo da timeline */
+.timeline-content:hover {
+    /* Move o card 5px para cima */
+    transform: translateY(-5px);
+    /* Aumenta a intensidade da sombra no hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Data do evento na timeline */
+.timeline-date {
+    /* Define o peso da fonte como negrito */
+    font-weight: 700;
+    /* Define a cor do texto como roxa */
+    color: #ff69b4;
+    /* Adiciona margem inferior de 10px */
+    margin-bottom: 10px;
+    /* Define o tamanho da fonte como 1.1 vezes o padrão */
+    font-size: 1.1rem;
+}
+
+/* Título do evento na timeline */
+.timeline-title {
+    /* Define o tamanho da fonte como 1.4 vezes o padrão */
+    font-size: 1.4rem;
+    /* Adiciona margem inferior de 15px */
+    margin-bottom: 15px;
+    /* Define a cor do texto como cinza escuro */
+    color: #000000;
+}
+
+/* Descrição do evento na timeline */
+.timeline-description {
+    /* Define a cor do texto como cinza médio */
+    color: #666;
+    /* Define a altura da linha como 1.6 para melhor legibilidade */
+    line-height: 1.6;
+    /* Adiciona margem inferior de 15px */
+    margin-bottom: 15px;
+}
+
+/* ===== SEÇÃO CALL-TO-ACTION ===== */
+
+/* Seção de call-to-action no final */
+.eventos-cta {
+     background: #ffc9e1;
+    /* Fundo rosa */
+    padding: 40px;
+    /* Espaçamento interno generoso */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Texto centralizado */
+    margin-top: 40px;
+    /* Espaço acima da seção */
+    margin-left: 11rem;
+    /*Espaço do lado para ficar igual os outros cta*/
+    margin-right: 11rem;
+    /*Espaço do lado para ficar igual os outros cta*/
+    margin-bottom: 3rem;
+    /*Espaço em baixo para ficar igual os outros cta*/
+}
+
+/* Título da seção CTA */
+.eventos-cta h3 {
+    /* Define tamanho da fonte como 1.8 vezes o padrão */
+    font-size: 1.8rem;
+    /* Adiciona margem inferior de 15px */
+    margin-bottom: 15px;
+    /* Define cor do texto como cinza escuro */
+    color: #000000;
+}
+
+/* Parágrafo da seção CTA */
+.eventos-cta p {
+    /* Define largura máxima de 600px */
+    max-width: 600px;
+    /* Centraliza horizontalmente com margem automática e adiciona 25px na parte inferior */
+    margin: 0 auto 25px;
+    /* Define cor do texto como cinza médio */
+    color: #000000;
+    /* Define altura da linha para melhor legibilidade */
+    line-height: 1.6;
+}
+
