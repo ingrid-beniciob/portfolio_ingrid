@@ -1,0 +1,50 @@
+/* ===== ÍCONES SOCIAIS NO FOOTER ===== */
+
+/* Container dos ícones sociais */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: left;
+}
+
+/* Links dos ícones */
+.social-icons a {
+    /* Cor inicial dos ícones */
+    color: #000000;
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Transição suave */
+    transition: all 0.3s ease;
+    /* Área clicável maior */
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+/* Efeito hover nos ícones */
+.social-icons a:hover {
+    /* Cor ao passar o mouse */
+    color: #b7095d;
+    /* Pequeno movimento para cima */
+    transform: translateY(-3px);
+}
+
+/* SVG dentro dos links */
+.social-icons a svg {
+    /* Tamanho do ícone */
+    width: 28px;
+    height: 28px;
+    /* Bloco para melhor alinhamento */
+    display: block;
+}
+
+/* Responsividade - Mobile */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .social-icons a svg {
+        width: 24px;
+        height: 24px;
+    }
+}
