@@ -54,35 +54,75 @@ function showErrorModal(message) {
     }
 }
 
+// Função para mostrar tela de sucesso
+function showSuccessScreen() {
+    document.getElementById('successScreen').style.display = 'flex';
+}
+
+// Função para fechar tela de sucesso
+function closeSuccessScreen() {
+    document.getElementById('successScreen').style.display = 'none';
+}
+
+// Função para enviar o formulário
+function submitForm(event) {
+    event.preventDefault();
+    
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const formData = new FormData(form);
+    
+    // Mostrar estado de carregamento
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Enviando...';
+    submitBtn.disabled = true;
+
+    // Enviar para o backend
+    fetch('processa_form.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erro na rede');
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.status === 'success') {
+            // Sucesso - mostrar modal de sucesso
+            showSuccessModal(data.message || 'Mensagem enviada com sucesso!');
+            form.reset();
+            
+            // Fechar modal de contato e mostrar tela de sucesso
+            setTimeout(() => {
+                closeContactForm();
+                showSuccessScreen();
+            }, 2000);
+            
+        } else {
+            // Erro do servidor
+            throw new Error(data.message || 'Erro ao enviar mensagem');
+        }
+    })
+    .catch(error => {
+        // Erro de rede ou do servidor
+        showErrorModal(error.message || 'Erro ao enviar mensagem. Tente novamente.');
+        console.error('Erro:', error);
+    })
+    .finally(() => {
+        // Restaurar botão
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    });
+}
+
 // Event listener para o formulário
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
 
     if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const formData = new FormData(form);
-
-            fetch('processa_form.php', {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.status === 'success') {
-                        showSuccessModal(data.message);
-                        form.reset();
-                        closeContactForm();
-                    } else {
-                        showErrorModal(data.message);
-                    }
-                })
-                .catch(error => {
-                    showErrorModal('Erro ao enviar mensagem. Tente novamente.');
-                    console.error('Erro:', error);
-                });
-        });
+        form.addEventListener('submit', submitForm);
     }
 
     // Fechar modal clicando no overlay

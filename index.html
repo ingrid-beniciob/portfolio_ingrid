@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head> <!--a parte de cima do site e oq nn aparece para o usuário-->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Ingrid Benicio | Portifólio </title>
@@ -11,11 +11,8 @@
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
-
-<body> <!--body é conteúdo da página -->
-
-    <header> <!--grupo de conteúdo introdutório ou de navegação-->
-        <!-- Botão Hambúrguer para Mobile -->
+<body>
+    <header>
         <button class="hamburger" id="hamburger" aria-label="Menu de navegação">
             <span></span>
             <span></span>
@@ -29,19 +26,15 @@
                     <td><a href="./pages/certifications.html">Certificações</a></td>
                     <td><a href="./pages/projects.html">Projetos</a></td>
                     <td><a href="./pages/events.html">Eventos</a></td>
-
                     <td><button id="openModalBtn" onclick="openContactForm()">Contato</button></td>
                 </tr>
             </table>
         </nav>
-        
     </header>
 
-    <!-- seção principal da tela-->
     <main>
         <section id="hero">
             <div class="hero-content">
-                <!-- Conteúdo textual com animações -->
                 <div class="hero-text">
                     <h1 class="animate-fade-in">Olá! Meu nome é Ingrid Benicio</h1>
                     <p class="animate-fade-in-delay">Estudante do ensino médio integrado ao técnico em informática</p>
@@ -49,14 +42,11 @@
                     <a href="./pages/projects.html" class="btn animate-fade-in-delay-3">Conheça um pouco mais sobre meus trabalhos →</a>
                 </div>
 
-                <!-- Sua imagem -->
                 <div class="hero-image">
                     <img src="./assets/images/image.png" alt="Ingrid Benicio" class="animate-float">
                 </div>
             </div>
         </section>
-
-
 
         <section id="about">
             <h2>Sobre mim</h2>
@@ -65,17 +55,14 @@
                 um espaço mais acessível para todos!</p>
         </section>
 
-        <!-- Container grid para os cards de habilidades -->
         <section>
             <div class="skills-grid">
-                <!-- Card de Soft Skills -->
                 <div class="skill-card">
                     <h3>Soft Skills</h3>
                     <p>Proatividade, liderança, comunicação, trabalho em equipe, resolução de problemas, pensamento
                         crítico e motivação contínua para aprender com as melhores práticas.</p>
                 </div>
 
-                <!-- Card de Hard Skills -->
                 <div class="skill-card">
                     <h3>Hard Skills</h3>
                     <p>Java, Python, SQL, HTML5, CSS3, Redes de computadores, IoT, Prototipagem, Banco de dados Oracle.
@@ -89,7 +76,6 @@
             <p>Algumas tendências tecnológicas que são importantes conhecer:</p>
 
             <div class="trends-cards">
-                <!-- Card 1 -->
                 <div class="trend-card">
                     <h3>Edge computing</h3>
                     <p>Arquitetura de computação distribuída que aproxima o processamento de dados da fonte onde eles
@@ -97,7 +83,6 @@
                     <a href="./pages/edgecomputer.html" class="trend-btn">Saiba mais</a>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="trend-card">
                     <h3>Automação e robótica</h3>
                     <p> Envolvem o uso de sistemas computadorizados e robôs para executar tarefas que ante eram
@@ -105,7 +90,6 @@
                     <a href="./pages/automacao.html" class="trend-btn">Saiba mais</a>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="trend-card">
                     <h3>Blockchain</h3>
                     <p>Um livro-razão digital descentralizado que registra transações de forma segura, transparente e
@@ -113,9 +97,8 @@
                     <a href="./pages/blockchain.html" class="trend-btn">Saiba mais</a>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="trend-card">
-                    <h3>Cybersecurity<area shape="" coords="" href="" alt=""></h3>
+                    <h3>Cybersecurity</h3>
                     <p>É a prática de proteger sistemas, redes, programas e dados contra ataques digitais, danos ou
                         acesso não autorizado. </p>
                     <a href="./pages/cybersecurity.html" class="trend-btn">Saiba mais</a>
@@ -128,15 +111,14 @@
     <div class="overlay" id="overlay"></div>
 
     <div class="modal" id="contactModal">
-
         <button id="closeModalBtn" onclick="closeContactForm()">X</button>
         <h2>Entre em Contato</h2>
-        <form id="contactForm" action="processa_form.php" method="POST">
+        <form id="contactForm" method="POST">
             <input type="text" name="nome" placeholder="Nome" required>
             <input type="text" name="sobrenome" placeholder="Sobrenome" required>
             <input type="email" name="email" placeholder="Seu email" required>
             <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit" id="submitBtn">Enviar</button>
         </form>
     </div>
 
@@ -147,7 +129,16 @@
         </div>
     </div>
 
-    <!-- seção rodapé da página-->
+    <!-- Tela de Sucesso -->
+    <div id="successScreen" class="success-screen">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            <h2>Mensagem Enviada com Sucesso!</h2>
+            <p>Obrigada pelo seu contato. Retornarei em breve.</p>
+            <button onclick="closeSuccessScreen()">Voltar ao Site</button>
+        </div>
+    </div>
+
     <footer>
         <div class="rodape">
             <div class="rodape-info">
@@ -168,7 +159,6 @@
             <div class="rodape-social">
                 <h4>Conectar</h4>
                 <div class="social-icons">
-                    <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/in/ingrid-benicio-bastos" target="_blank"
                         rel="noopener noreferrer" aria-label="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -178,7 +168,6 @@
                         </svg>
                     </a>
 
-                    <!-- WhatsApp -->
                     <a href="https://wa.me/5511950840447" target="_blank" rel="noopener noreferrer"
                         aria-label="WhatsApp">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -188,7 +177,6 @@
                         </svg>
                     </a>
 
-                    <!-- GitHub -->
                     <a href="https://github.com/ingrid-beniciob" target="_blank" rel="noopener noreferrer"
                         aria-label="GitHub">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -208,6 +196,7 @@
 
     <script src="js/modal.js"></script>
     <script src="js/hamburguer.js"></script>
+
 </body>
 
 </html>
