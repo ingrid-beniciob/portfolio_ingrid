@@ -288,11 +288,11 @@
 
     /* === PÁGINA DE EVENTOS === */
     #eventos {
-        padding: 0 20px 40px;
+        padding: 0 0px 40px;
     }
 
     .eventos-header {
-        padding: 120px 20px 40px;
+        padding: 100px 0 100px;
         margin-bottom: 30px;
     }
 
@@ -538,67 +538,8 @@
         font-size: 1.9rem;
     }
 
-    .trends-cards {
-        grid-template-columns: 1fr;
-    }
-
-    /* Todas as páginas em mobile */
-    #certificados,
-    #projetos,
-    #edge-computing,
-    #blockchain,
-    #automacao,
-    #cybersecurity {
-        padding: 40px 15px;
-    }
-
-    .certs-header,
-    .projetos-header,
-    .edge-header,
-    .block-header,
-    .automacao-header,
-    .cyber-header,
-    .eventos-header {
-        padding: 2rem 1rem;
-    }
-
-    .certs-header h1,
-    .projetos-header h1,
-    .edge-header h1,
-    .block-header h1,
-    .automacao-header h1,
-    .cyber-header h1,
-    .eventos-header h1 {
-        font-size: 1.7rem;
-    }
-
-    .certs-grid,
-    .projetos-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .certs-current {
-        padding: 40px 15px;
-    }
-
-    /* Modal responsivo */
-    .modal {
-        min-width: 300px;
-        max-width: 95%;
-        padding: 1.5rem;
-    }
-
-    /* Footer */
-    footer {
-        padding: 2rem 1rem 1rem;
-    }
-}
-
-/* ===== MOBILE PEQUENO (ATÉ 480px) ===== */
-@media (max-width: 480px) {
+    /* Ajustes para mobile muito pequeno */
     .hamburger {
-        top: 0.8rem;
         right: 0.8rem;
         padding: 8px;
     }
