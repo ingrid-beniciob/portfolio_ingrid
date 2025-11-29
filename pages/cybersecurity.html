@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/social-icons.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/popup-styles.css">
 </head>
 
 <body>
@@ -97,22 +98,23 @@
     <div class="overlay" id="overlay"></div>
 
     <div class="modal" id="contactModal">
-
         <button id="closeModalBtn" onclick="closeContactForm()">X</button>
         <h2>Entre em Contato</h2>
-        <form id="contactForm" action="processa_form.php" method="POST">
+        <form id="contactForm" method="POST">
             <input type="text" name="nome" placeholder="Nome" required>
             <input type="text" name="sobrenome" placeholder="Sobrenome" required>
             <input type="email" name="email" placeholder="Seu email" required>
             <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit" id="submitBtn">Enviar</button>
         </form>
     </div>
 
-    <!-- Modal de Notificação -->
-    <div class="notification-modal" id="notificationModal">
-        <div class="notification-content">
-            <p id="notificationMessage" class="notification-message"></p>
+    <!-- Pop-up de Notificação -->
+    <div class="notification-popup" id="notificationPopup">
+        <div class="popup-content">
+            <span class="popup-icon" id="popupIcon">✓</span>
+            <p class="popup-message" id="popupMessage"></p>
+            <button class="popup-close" onclick="closeNotification()">×</button>
         </div>
     </div>
 

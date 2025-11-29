@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/social-icons.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/popup-styles.css">
 </head>
 
 <body>
@@ -47,7 +48,11 @@
                         <div class="timeline-date">Março 2025</div>
                         <h3 class="timeline-title">18° Edição Empreenda Senac</h3>
                         <p class="timeline-description">
-                            Desde de março participo da jornada do Empreenda Senac, no qual eu e meus colegas projetamos uma pulseira com IA embarcada para pessoas com perca auditiva. A pulseira tinha o intuito de alertar os usuários quando houvesse sons de emergencias ao seu redos, evitando o pior dos casos para uma pessoa que não escuta. Chegamos até a semifinal da competição e infelizmente não avançamos, porém saio cheia de orgulho e com inúmeros aprendizados.
+                            Desde de março participo da jornada do Empreenda Senac, no qual eu e meus colegas projetamos
+                            uma pulseira com IA embarcada para pessoas com perca auditiva. A pulseira tinha o intuito de
+                            alertar os usuários quando houvesse sons de emergencias ao seu redos, evitando o pior dos
+                            casos para uma pessoa que não escuta. Chegamos até a semifinal da competição e infelizmente
+                            não avançamos, porém saio cheia de orgulho e com inúmeros aprendizados.
                         </p>
                     </div>
                 </div>
@@ -58,7 +63,11 @@
                         <div class="timeline-date">Outubro 2025</div>
                         <h3 class="timeline-title">Futurecom - Expo Imigrantes</h3>
                         <p class="timeline-description">
-                           Minha experiência na Futurecom 2025 foi incrível. O Expo Imigrantes estava lotado de inovações, com demonstrações de inteligência artificial e telecomunicações por toda parte. Conversei com especialistas e testei equipamentos, como o callcenter com IA, que me fizeram sentir no futuro. Foi um dia de muita aprendizado e inspiração, vendo de perto as tecnologias que vão mudar e mudam o mundo.
+                            Minha experiência na Futurecom 2025 foi incrível. O Expo Imigrantes estava lotado de
+                            inovações, com demonstrações de inteligência artificial e telecomunicações por toda parte.
+                            Conversei com especialistas e testei equipamentos, como o callcenter com IA, que me fizeram
+                            sentir no futuro. Foi um dia de muita aprendizado e inspiração, vendo de perto as
+                            tecnologias que vão mudar e mudam o mundo.
                         </p>
                     </div>
                 </div>
@@ -69,7 +78,10 @@
                         <div class="timeline-date">Novembro 2025</div>
                         <h3 class="timeline-title">Palestra IBM-Z EXPLORE</h3>
                         <p class="timeline-description">
-                           Neste evento disponibilizado pelo Senac, tivemoz a oportunidade de aprender sobre as diversas oportunidades no mercado de tecnologia, discutimos sobre Mainframes e tivemos acesso ao curso da IBM Z Explore que aborda essa temática. Foi uma excelente oportunidade para aprofundar meus conhecimentos e desenvolver novas habilidades na área que eu amo. 
+                            Neste evento disponibilizado pelo Senac, tivemoz a oportunidade de aprender sobre as
+                            diversas oportunidades no mercado de tecnologia, discutimos sobre Mainframes e tivemos
+                            acesso ao curso da IBM Z Explore que aborda essa temática. Foi uma excelente oportunidade
+                            para aprofundar meus conhecimentos e desenvolver novas habilidades na área que eu amo.
                         </p>
                     </div>
                 </div>
@@ -80,7 +92,11 @@
                         <div class="timeline-date">Novembro 2025</div>
                         <h3 class="timeline-title">Visita ao GTA Technologies</h3>
                         <p class="timeline-description">
-                            Neste evento pude presenciar palestras incríveis sobre temas esssenciais, como os desafios e conquistas de ser mulher na área tech, transição de carreira, a importância de construir um Linkedin estratégico, universo AWS, cursos para estar sempre se aprimorando e etc. Foi uma experiência marcante e cheia de aprendizados, muito feliz por ter tido essa oportunidade disponibilizada pelo SENAC em parceria com a MCIO.
+                            Neste evento pude presenciar palestras incríveis sobre temas esssenciais, como os desafios e
+                            conquistas de ser mulher na área tech, transição de carreira, a importância de construir um
+                            Linkedin estratégico, universo AWS, cursos para estar sempre se aprimorando e etc. Foi uma
+                            experiência marcante e cheia de aprendizados, muito feliz por ter tido essa oportunidade
+                            disponibilizada pelo SENAC em parceria com a MCIO.
                         </p>
                     </div>
                 </div>
@@ -98,22 +114,23 @@
     <div class="overlay" id="overlay"></div>
 
     <div class="modal" id="contactModal">
-
         <button id="closeModalBtn" onclick="closeContactForm()">X</button>
         <h2>Entre em Contato</h2>
-        <form id="contactForm" action="processa_form.php" method="POST">
+        <form id="contactForm" method="POST">
             <input type="text" name="nome" placeholder="Nome" required>
             <input type="text" name="sobrenome" placeholder="Sobrenome" required>
             <input type="email" name="email" placeholder="Seu email" required>
             <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit" id="submitBtn">Enviar</button>
         </form>
     </div>
 
-    <!-- Modal de Notificação -->
-    <div class="notification-modal" id="notificationModal">
-        <div class="notification-content">
-            <p id="notificationMessage" class="notification-message"></p>
+    <!-- Pop-up de Notificação -->
+    <div class="notification-popup" id="notificationPopup">
+        <div class="popup-content">
+            <span class="popup-icon" id="popupIcon">✓</span>
+            <p class="popup-message" id="popupMessage"></p>
+            <button class="popup-close" onclick="closeNotification()">×</button>
         </div>
     </div>
 
@@ -122,7 +139,8 @@
         <div class="rodape">
             <div class="rodape-info">
                 <h3>Ingrid Benicio</h3>
-                <p>Estudante de tecnologia e aspirante a desenvolvedora full-stack, usando a tecnologia para transformar o mundo.</p>
+                <p>Estudante de tecnologia e aspirante a desenvolvedora full-stack, usando a tecnologia para transformar
+                    o mundo.</p>
             </div>
 
             <div class="rodape-links">
