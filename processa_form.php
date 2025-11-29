@@ -8,7 +8,8 @@ header('Content-Type: application/json; charset=utf-8');
 
 
 if (!isset($_POST['nome'])) {
-    die("Formulário não enviado.");
+    echo json_encode(["status" => "error", "message" => "Formulário não enviado."]);
+    exit();
 }
 
 $nome = $_POST['nome'];
@@ -22,8 +23,10 @@ $stmt->bind_param("ssss", $nome, $sobrenome, $email, $mensagem);
 
 if ($stmt->execute()) {
     echo json_encode(["status" => "success", "message" => "Mensagem enviada com sucesso!"]);
+    exit();
 } else {
     echo json_encode(["status" => "error", "message" => "Erro ao enviar: " . $stmt->error]);
+    exit();
 }
 
 $stmt->close();

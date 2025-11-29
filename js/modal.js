@@ -18,103 +18,93 @@ function closeContactForm() {
     document.getElementById('overlay').style.display = 'none';
 }
 
-// Função para mostrar modal de sucesso
-function showSuccessModal(message) {
-    const modal = document.getElementById('notificationModal');
-    const messageElement = document.getElementById('notificationMessage');
+// Função para mostrar pop-up de notificação
+function showNotification(message, type) {
+    const popup = document.getElementById('notificationPopup');
+    const messageElement = document.getElementById('popupMessage');
+    const icon = document.getElementById('popupIcon');
 
-    if (modal && messageElement) {
+    if (popup && messageElement && icon) {
+        // Define a mensagem
         messageElement.textContent = message;
-        messageElement.className = 'notification-message success';
-        modal.style.display = 'block';
 
+        // Define o ícone e estilo baseado no tipo
+        if (type === 'success') {
+            icon.textContent = '✓';
+            popup.className = 'notification-popup success';
+        } else {
+            icon.textContent = '✕';
+            popup.className = 'notification-popup error';
+        }
+
+        // Mostra o pop-up
+        popup.style.display = 'flex';
+
+        // Fecha automaticamente após 3 segundos
         setTimeout(() => {
-            modal.style.display = 'none';
+            popup.style.display = 'none';
         }, 3000);
-    } else {
-        alert(message); // Fallback caso o modal não exista
     }
 }
 
-// Função para mostrar modal de erro
-function showErrorModal(message) {
-    const modal = document.getElementById('notificationModal');
-    const messageElement = document.getElementById('notificationMessage');
-
-    if (modal && messageElement) {
-        messageElement.textContent = message;
-        messageElement.className = 'notification-message error';
-        modal.style.display = 'block';
-
-        setTimeout(() => {
-            modal.style.display = 'none';
-        }, 5000);
-    } else {
-        alert(message); // Fallback
+// Função para fechar o pop-up manualmente
+function closeNotification() {
+    const popup = document.getElementById('notificationPopup');
+    if (popup) {
+        popup.style.display = 'none';
     }
-}
-
-// Função para mostrar tela de sucesso
-function showSuccessScreen() {
-    document.getElementById('successScreen').style.display = 'flex';
-}
-
-// Função para fechar tela de sucesso
-function closeSuccessScreen() {
-    document.getElementById('successScreen').style.display = 'none';
 }
 
 // Função para enviar o formulário
 function submitForm(event) {
     event.preventDefault();
-    
+
     const form = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
     const formData = new FormData(form);
-    
+
     // Mostrar estado de carregamento
     const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Enviando...';
     submitBtn.disabled = true;
 
-    // Enviar para o backend
+    // Enviar para o backend - Agora funciona em todas as páginas pois há processa_form.php em pages/ também
     fetch('processa_form.php', {
         method: 'POST',
         body: formData
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Erro na rede');
-        }
-        return response.json();
-    })
-    .then(data => {
-        if (data.status === 'success') {
-            // Sucesso - mostrar modal de sucesso
-            showSuccessModal(data.message || 'Mensagem enviada com sucesso!');
-            form.reset();
-            
-            // Fechar modal de contato e mostrar tela de sucesso
-            setTimeout(() => {
-                closeContactForm();
-                showSuccessScreen();
-            }, 2000);
-            
-        } else {
-            // Erro do servidor
-            throw new Error(data.message || 'Erro ao enviar mensagem');
-        }
-    })
-    .catch(error => {
-        // Erro de rede ou do servidor
-        showErrorModal(error.message || 'Erro ao enviar mensagem. Tente novamente.');
-        console.error('Erro:', error);
-    })
-    .finally(() => {
-        // Restaurar botão
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    });
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro na rede');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.status === 'success') {
+                // Sucesso - mostrar pop-up de sucesso
+                showNotification(data.message || 'Mensagem enviada com sucesso!', 'success');
+                form.reset();
+
+                // Fechar modal de contato após 1 segundo
+                setTimeout(() => {
+                    closeContactForm();
+                }, 1000);
+
+            } else {
+                // Erro do servidor
+                throw new Error(data.message || 'Erro ao enviar mensagem');
+            }
+        })
+        .catch(error => {
+            // Erro de rede ou do servidor
+            showNotification(error.message || 'Erro ao enviar mensagem. Tente novamente.', 'error');
+            console.error('Erro:', error);
+        })
+        .finally(() => {
+            // Restaurar botão
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        });
 }
 
 // Event listener para o formulário
