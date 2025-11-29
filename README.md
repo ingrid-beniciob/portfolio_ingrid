@@ -113,8 +113,9 @@ O objetivo é apresentar meu progresso, minhas habilidades e tudo o que venho co
 
 ## 👩‍💻 Autora
 
-**Ingrid Benício**  
+**Ingrid Benicio**  
 Portfólio desenvolvido como parte dos meus estudos em desenvolvimento web.
+
 
 
 
