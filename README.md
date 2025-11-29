@@ -1,11 +1,11 @@
-# 📂 Portfolio Ingrid — Sistema Web com PHP e XAMPP
+### 📂 Portfolio Ingrid — Sistema Web com PHP e XAMPP
 
 Este projeto é um portfólio pessoal desenvolvido utilizando **HTML**, **CSS**, **JavaScript**, **PHP** e **MySQL**, rodando localmente através do **XAMPP**.  
 O banco de dados foi criado diretamente no phpMyAdmin do XAMPP, portanto **o acesso ao sistema deve ser feito via `localhost/portfolio_ingrid`**.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+### 🚀 Tecnologias Utilizadas
 
 - HTML5  
 - CSS3  
@@ -16,7 +16,7 @@ O banco de dados foi criado diretamente no phpMyAdmin do XAMPP, portanto **o ace
 
 ---
 
-## 📁 Estrutura do Projeto
+### 📁 Estrutura do Projeto
 
 portfolio_ingrid/
 │
@@ -54,7 +54,7 @@ portfolio_ingrid/
 
 ---
 
-## 🛠️ Como Rodar o Projeto Localmente
+### 🛠️ Como Rodar o Projeto Localmente
 
 ### 1. Instale o XAMPP  
 Baixe em:  
@@ -79,7 +79,7 @@ database/contato.sql
 
 ---
 
-## 🌐 Acessando o Projeto
+### 🌐 Acessando o Projeto
 
 Depois de tudo configurado, acesse:
 http://localhost/portfolio_ingrid
@@ -87,7 +87,7 @@ http://localhost/portfolio_ingrid
 
 ---
 
-## ✉️ Formulário de Contato
+### ✉️ Formulário de Contato
 
 O projeto possui um formulário que:
 
@@ -115,6 +115,7 @@ O objetivo é apresentar meu progresso, minhas habilidades e tudo o que venho co
 
 **Ingrid Benício**  
 Portfólio desenvolvido como parte dos meus estudos em desenvolvimento web.
+
 
 
 
